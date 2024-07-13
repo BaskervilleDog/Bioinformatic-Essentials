@@ -1,0 +1,83 @@
+---
+title: "Accessing and retrieving data"
+output: html_notebook
+---
+
+#Install packages for BiomaRt for EMBL-EBI data retrieval
+```{r}
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install("biomaRt")
+
+library(biomaRt)
+```
+
+
+
+```{r}
+
+ensembl_fungi <- useMart(host="https://fungi.ensembl.org", 
+                         biomart="fungi_mart")
+
+listDatasets(ensembl_fungi)
+
+dataset <- useDataset("scerevisiae_eg_gene",
+                   mart = ensembl_fungi)
+
+results <- getBM(
+  attributes = c("ensembl_gene_id",
+                 "entrezgene_id"),
+  filters = "entrezgene_id",
+  values = c$Uid,
+  mart = dataset
+)
+
+listAttributes(dataset)
+
+gene_sequences <- getBM(
+  attributes = c("ensembl_gene_id",
+                 "gene_exon_intron",
+                 "description"),
+  filters = "ensembl_gene_id",
+  values = results$ensembl_gene_id,
+  mart = dataset
+)
+
+
+fasta_sequences <- DNAStringSet(setNames(gene_sequences$gene_exon_intron, paste(gene_sequences$ensembl_gene_id, gene_sequences$description, sep = "_")))
+writeXStringSet(fasta_sequences, filepath = "ensembl_gene_sequence.fasta")
+
+
+
+mRNA_sequences <- getBM(
+  attributes = c("ensembl_gene_id",
+                 "ensembl_transcript_id",
+                 "transcript_exon_intron",
+                 "description"),
+  filters = "ensembl_gene_id",
+  values = results$ensembl_gene_id,
+  mart = dataset
+)
+
+
+fasta_sequences <- DNAStringSet(setNames(mRNA_sequences$transcript_exon_intron, paste(mRNA_sequences$ensembl_gene_id, mRNA_sequences$description, sep = "_")))
+writeXStringSet(fasta_sequences, filepath = "ensembl_mRNA_sequence.fasta")
+
+
+
+protein_sequences <- getBM(
+  attributes = c("ensembl_peptide_id",
+                 "peptide",
+                 "description"),
+  filters = "ensembl_gene_id",
+  values = results$ensembl_gene_id,
+  mart = dataset
+)
+
+fasta_sequences <- AAStringSet(setNames(protein_sequences$peptide, paste(protein_sequences$ensembl_peptide_id,protein_sequences$description, sep = " ")))
+writeXStringSet(fasta_sequences, filepath = "ensembl_protein_sequence.fasta")
+
+listAttributes(dataset)
+
+```
+
