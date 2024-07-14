@@ -1,15 +1,193 @@
 ---
 title: "Accessing and retrieving data"
 output: html_notebook
+author: "Gianlucca de Urzeda Alves"
 ---
 
-#Install packages for BiomaRt for EMBL-EBI data retrieval
+# Remove all elements from the Global Environment
 ```{r}
-if (!requireNamespace("BiocManager", quietly = TRUE))
-    install.packages("BiocManager")
-BiocManager::install("biomaRt")
+rm(list = ls())
+```
 
-library(biomaRt)
+
+# Source the functions provided
+```{r}
+source("Functions.R")
+```
+
+
+# Tutorial for Scientific Literature retrieval using functions provided
+```{r}
+#Types of filters that can be applied to the Search term. Use between brackets Ex. "Search term [TITL]"
+entrez_db_searchable("pubmed")
+
+# Obtain the Scientific Literature data from Pubmed using a Search term
+Lit <- LiteratureRetrieval("Cellulose synthase Arabidopsis thaliana")
+
+# Use tidyverse or base R functions to filter for specific information
+
+## Scientific Papers after 2018 Publication dates 
+Lit |> 
+  filter(Publication.Date > 2018)
+
+## Scientific Papers from specific Journals
+Lit |> 
+  filter(Journal %in% "Frontiers in plant science")
+
+Lit |> 
+  filter(Journal %in% c("Frontiers in plant science", "Journal of experimental botany"))
+
+## Scientific Papers from specific Authors
+Lit |> 
+  filter(grepl("Baskin", Authors))
+
+## If Scientific Papers titles are too broad, filter for specific words
+Lit |> 
+  filter(grepl("Arabidopsis", Title) & grepl("Cellulose", Title))
+
+
+
+```
+
+
+# Tutorial for Genome Sequences information retrieval using functions provided
+```{r}
+# Obtain the Genome sequences associated with a organism (Common or Scientific name)
+genome <- GenomeRetrieval("Rice")
+
+# Use tidyverse or base R functions to filter for specific information
+
+## Genomes after 2018 Publication dates 
+genome |> 
+  filter(Date > 2018)
+
+## Genomes from RefSeq
+genome |> 
+  filter(Database %in% "refseq")
+
+## Genomes from specific cultivars or chromosomes
+genome |> 
+  filter(grepl("Jiayu", Title))
+
+## Filter sequences based on length
+genome |> 
+  filter(Seq.Length > 100000)
+
+genome <- genome |> 
+  arrange(desc(Seq.Length)) |> 
+  slice(1:100)
+
+```
+
+
+# Tutorial for Genome Sequences retrieval and FASTA file generation
+```{r}
+# batch_size must be smaller than 50
+# The sequences fetched from NCBI can be written in any text file format (FASTA is recommended)
+
+GenomeFetcher(genome$Uid, "Genome_Seq.fasta", batch_size = 40)
+
+```
+
+
+# Tutorial for Gene Sequences retrieval using functions provided
+```{r}
+# Obtain the Gene sequences associated with a organism
+
+genes <- GeneRetrieval("MAPK", "Homo sapiens")
+
+genes <- GeneRetrieval(c("MAPK",
+"Alcohol Dehydrogenase",
+"p53",
+"BRCA1",
+"TNF",
+"EGFR",
+"IL6",
+"TGFB1",
+"ESR1",
+"APOE",
+"Transferase"), "Homo sapiens")
+
+# Use tidyverse or base R functions to filter for specific information
+
+# Remove genes that were discontinued by NCBI
+genes |> 
+  filter(!grepl("DISCONTINUED", Summary))
+
+genes <- genes |> 
+  slice(1:10)
+
+```
+
+
+# Tutorial for mRNA Sequences retrieval using functions provided
+```{r}
+# For a single gene, multiple mRNA may exist, therefore the function is expected to retrieve
+# an unexpectedly high number of sequences, given a number of gene UIDs. Use a curated and filtered
+# gene list for this function
+
+# Use the genes UID list obtained previously
+mRNA <- mRNARetrieval(genes$Uid)
+
+# Or use a specific gene UID
+mRNA <- mRNARetrieval("5594")
+
+# Use tidyverse or base R functions to filter for specific information
+
+# Remove Predicted mRNAs
+mRNA |> 
+  filter(!grepl("PREDICTED", Title))
+
+```
+
+
+# Tutorial for mRNA Sequences retrieval and FASTA file generation
+```{r}
+# batch_size must be smaller than 50
+# The sequences fetched from NCBI can be written in any text file format (FASTA is recommended)
+
+mRNAFetcher(mRNA$RNA_UID, "mRNA_Seq.fasta", batch_size = 40)
+
+```
+
+# Tutorial for Protein Sequences retrieval using functions provided
+```{r}
+# For a single gene, multiple proteins may exist, therefore the function is expected to retrieve
+# an unexpectedly high number of sequences, given a number of gene UIDs. Use a curated and filtered
+# gene list for this function
+
+# Use the genes UID list obtained previously
+protein <- ProteinRetrieval(genes$Uid)
+
+# Or use a specific gene UID
+protein <- ProteinRetrieval("5594")
+
+# Use tidyverse or base R functions to filter for specific information
+
+# Remove Predicted Proteins
+protein |> 
+  filter(!grepl("PREDICTED", Title))
+
+```
+
+
+# Tutorial for Protein Sequences retrieval and FASTA file generation
+```{r}
+# batch_size must be smaller than 50
+# The sequences fetched from NCBI can be written in any text file format (FASTA is recommended)
+
+ProteinFetcher(protein$PROT_UID, "protein_Seq.fasta", batch_size = 40)
+
+```
+
+
+
+```{r}
+total <- full_join(mRNA, protein, by = "Gene_UID")
+total |> 
+  dplyr::select(Gene_UID, RNA_UID, PROT_UID) |> 
+  group_by(Gene_UID)
+
 ```
 
 
