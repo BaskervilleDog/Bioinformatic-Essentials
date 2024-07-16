@@ -24,11 +24,24 @@ if (!requireNamespace("BiocManager", quietly = TRUE))
   install.packages("BiocManager")
 
 if (!requireNamespace("biomaRt", quietly = TRUE))
-  
-
-BiocManager::install("biomaRt")
+  BiocManager::install("biomaRt")
 
 library(biomaRt)
+
+if (!requireNamespace("BSgenome", quietly = TRUE))
+  BiocManager::install("BSgenome")
+
+library(BSgenome)
+
+if (!requireNamespace("Biostrings", quietly = TRUE))
+  BiocManager::install("Biostrings")
+
+library(Biostrings)
+
+if (!requireNamespace("GenomicRanges", quietly = TRUE))
+  BiocManager::install("GenomicRanges")
+
+library(GenomicRanges)
 
 #==============================================================================#
 #==============================================================================#
@@ -146,7 +159,7 @@ GenomeRetrieval <- function(organism_name, retmax = 10000) {
   
   # Create a table with the relevant details
   genome_table <- tibble(
-    Uid = extract_from_esummary_list(genome_summary, "uid", simplify = TRUE),
+    GENOME_Uid = extract_from_esummary_list(genome_summary, "uid", simplify = TRUE),
     Date = extract_from_esummary_list(genome_summary, "createdate", simplify = TRUE),
     Accession = extract_from_esummary_list(genome_summary, "caption", simplify = TRUE),
     Acc_version = extract_from_esummary_list(genome_summary, "accessionversion", simplify = TRUE),
@@ -290,6 +303,9 @@ GeneRetrieval <- function(gene_names, organism_name, retmax = 2000, batch_size =
 #"APOE",
 #"Transferase"), "Homo sapiens")
 
+
+#==============================================================================#
+#==============================================================================#
 
 
 #==============================================================================#

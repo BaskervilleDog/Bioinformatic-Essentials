@@ -46,14 +46,13 @@ Lit |>
   filter(grepl("Arabidopsis", Title) & grepl("Cellulose", Title))
 
 
-
 ```
 
 
 # Tutorial for Genome Sequences information retrieval using functions provided
 ```{r}
 # Obtain the Genome sequences associated with a organism (Common or Scientific name)
-genome <- GenomeRetrieval("Rice")
+genome <- GenomeRetrieval("Saccharomyces cerevisiae")
 
 # Use tidyverse or base R functions to filter for specific information
 
@@ -67,12 +66,14 @@ genome |>
 
 ## Genomes from specific cultivars or chromosomes
 genome |> 
-  filter(grepl("Jiayu", Title))
+  filter(grepl("wine001", Title)) |> 
+  filter(Seq.Length > 10000) -> genome
 
 ## Filter sequences based on length
 genome |> 
   filter(Seq.Length > 100000)
 
+# Choosing only 100 rows from the data table
 genome <- genome |> 
   arrange(desc(Seq.Length)) |> 
   slice(1:100)
@@ -94,7 +95,7 @@ GenomeFetcher(genome$Uid, "Genome_Seq.fasta", batch_size = 40)
 ```{r}
 # Obtain the Gene sequences associated with a organism
 
-genes <- GeneRetrieval("MAPK", "Homo sapiens")
+genes <- GeneRetrieval("Alcohol dehydrogenase", "Saccharomyces cerevisiae")
 
 genes <- GeneRetrieval(c("MAPK",
 "Alcohol Dehydrogenase",
