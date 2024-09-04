@@ -10,7 +10,7 @@ Gene prediction plays a important role in annotating genomic sequences, particul
 
 1. **Identification of DNA Features (Structural Annotation):**
     
-    - Feature prediction algorithms can identify and annotate various genomic elements, including:
+    - Gene prediction algorithms can identify and annotate various genomic elements, including:
         - **Genes:** Both protein-coding (mRNA and Proteins) and non-coding genes (rRNA, tRNA, miRNA, snRNAm snoRNA, lncRNA), which are the fundamental units of heredity and are responsible for various cellular functions.
         - **Introns and Exons:** Identifies the boundaries between introns (non-coding regions) and exons (coding regions), crucial for understanding gene structure and splicing patterns.
         - **Splicing Sites:** Identification of splicing sites is essential for predicting mature mRNA sequences from primary transcripts, impacting protein synthesis.
