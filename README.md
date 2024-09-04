@@ -14,19 +14,19 @@ Bioinformatics is an interdisciplinary field that combines biology, computer sci
 This repository aims to bridge the gap between biological research and computational skills by providing comprehensive tutorials and learning resources that cater to various levels of expertise, from beginners to advanced users. Whether you're new to bioinformatics or looking to enhance your skills, you'll find practical guides and examples that can be directly applied to your research.
 
 ### **What You'll Find Here**
-#### - **Step-by-Step Tutorials**
+- **Step-by-Step Tutorials**
 Detailed guides on how to use popular bioinformatics tools and software, including command-line interfaces, data visualization tools, and statistical analysis platforms.
 
-#### - **Use Case Examples**
+- **Use Case Examples**
 Real-world scenarios illustrating the application of bioinformatics methods in genomics, proteomics, transcriptomics, metagenomics, and more.
 
-#### - **Data Analysis Pipelines**
+- **Data Analysis Pipelines**
 Instructions on setting up and running pipelines for common bioinformatics tasks such as sequence alignment, variant calling, gene expression analysis, and pathway analysis.
 
-#### - **Learning Resources**
+- **Learning Resources**
 Links to additional reading materials, videos, and courses to deepen your understanding of bioinformatics concepts.
 
-#### - **Community Contributions**
+- **Community Contributions**
 An open platform for community members to contribute tutorials, suggest improvements, or request specific topics.
 
 ### **Who Is This For?**
