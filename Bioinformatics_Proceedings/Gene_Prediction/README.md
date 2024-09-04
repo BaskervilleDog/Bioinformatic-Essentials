@@ -158,6 +158,8 @@ To overcome the limitations of each individual method, integrated approaches com
 
 Gene prediction remains a dynamic and evolving field, with ongoing improvements driven by advances in computational methods, machine learning, and the increasing availability of genomic and transcriptomic data. These methods collectively enable researchers to construct detailed and accurate maps of genomes, supporting the study of gene function, evolution, and the complex regulatory networks that underpin biological systems.
 
+---
+
 ### Similarity based approach as example
 
 #### Detection of ORFs (Open Reading Frames)
