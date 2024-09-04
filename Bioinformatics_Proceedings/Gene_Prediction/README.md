@@ -6,7 +6,7 @@ Gene prediction is a fundamental aspect of bioinformatics and computational biol
 
 #### **Importance of Gene Prediction**
 
-Gene prediction plays a important role in annotating genomic sequences, particularly in large-scale genome projects. The main aspects of Gene prediction is as follows:
+Gene prediction plays a important role in annotating genomic sequences, particularly in large-scale genome projects. The main aspects of gene prediction is as follows:
 
 1. **Identification of DNA Features (Structural Annotation):**
     
