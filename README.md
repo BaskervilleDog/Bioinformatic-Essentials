@@ -9,4 +9,4 @@ Welcome to the Bioinformatics Essentials repository! This project aims to provid
 
 
 Contact
-For any questions or issues, please contact [Your Name] at [your.email@example.com].
+For any questions or issues, please contact [Gianlucca Urzêda] at [gianlucca.urzeda@gmail.com].
