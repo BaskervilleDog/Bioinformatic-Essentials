@@ -2,7 +2,7 @@
 
 ## Importance
 
-Gene prediction is a fundamental aspect of bioinformatics and computational biology, involving the identification and annotation of genes within large, contiguous sequences of DNA. As a fundamental step in genome analysis, gene prediction enables researchers to locate gene products, such as RNA and Proteins, and better understand the functional architecture of genomes.
+Gene prediction is a fundamental aspect of bioinformatics and computational biology, involving the identification and annotation of genes within large, contiguous sequences of DNA. As a fundamental step in genome analysis, gene prediction enables researchers to locate gene products, such as RNA and proteins, and better understand the functional architecture of genomes.
 
 #### **Importance of Gene Prediction**
 
