@@ -5,7 +5,7 @@ Welcome to the Bioinformatics Essentials repository! This project aims to provid
 ## Table of Contents
 1. [Introduction](#introduction)
 
-##Introduction
+## Introduction
 Bioinformatics is an interdisciplinary field that combines biology, computer science, and data analysis to understand and interpret complex biological data. As the volume of biological data grows, so does the need for effective computational approaches to analyze and extract meaningful insights from this information.
 
 This repository aims to bridge the gap between biological research and computational skills by providing comprehensive tutorials and learning resources that cater to various levels of expertise, from beginners to advanced users. Whether you're new to bioinformatics or looking to enhance your skills, you'll find practical guides and examples that can be directly applied to your research.
@@ -27,7 +27,7 @@ To get started, explore the tutorials organized by topic in the tutorials direct
 
 2. [License](#license)
 3. [Contact](#contact)
-##Contact
+## Contact
 For any questions or issues, please contact [Gianlucca Urzêda] at [gianlucca.urzeda@gmail.com].
 
 4.[Contribuiton](#contribution)
