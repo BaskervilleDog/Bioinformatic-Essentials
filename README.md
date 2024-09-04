@@ -36,7 +36,7 @@ Educators in need of teaching resources for bioinformatics courses.
 Anyone interested in learning how to analyze biological data using computational tools.
 
 ### **Getting Started**
-To get started, explore the tutorials organized by topic in the tutorials directory. Each tutorial includes prerequisites, detailed steps, and sample data where applicable.
+To get started, explore the Bioinformatics Proceedings, organized by topic in the directories.
 
 ## **Contact**
 For any questions or issues, please contact [Gianlucca Urzêda] at [gianlucca.urzeda@gmail.com].
