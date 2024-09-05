@@ -12,7 +12,7 @@ Gene prediction is a fundamental task in bioinformatics that involves identifyin
 - List of softwares:
   - [Ab initio Prediction Softwares](BaskervilleDog/Bioinformatic-Essentials/Bioinformatics_Proceedings/Gene_Prediction/Ab_initio_prediction_softwares.md)
   - [Homology Based Prediction Softwares](BaskervilleDog/Bioinformatic-Essentials/Bioinformatics_Proceedings/Gene_Prediction/Homology_based_prediction_softwares.md)
-  - [Integrated Prediction Softwares](BaskervilleDog/Bioinformatic-Essentials/Bioinformatics_Proceedings/Gene_Prediction/Integrated_prediction_softwares):
+  - [Integrated Prediction Softwares](BaskervilleDog/Bioinformatic-Essentials/Bioinformatics_Proceedings/Gene_Prediction/Integrated_prediction_softwares)
     - Combined Based Gene Prediction 
-      - Pipeline Based Gene Prediction 
+    - Pipeline Based Gene Prediction 
     
