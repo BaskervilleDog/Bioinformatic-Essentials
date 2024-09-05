@@ -79,7 +79,8 @@ Ab initio gene prediction is a computational approach that predicts gene structu
    - **Eukaryotes:**
      
 | Year | Tool Name | Publication | Method | Organism |
-| 1994 | GeneLang / GenLang                         | Dong, S. and Searls, D.B. 1994. Gene structure prediction by linguistic methods. Genomics 23: 540-551.                                   | Linguistic method HMM, PD, WAM               | Eukaryote                       |
+| 1994 | GeneLang / GenLang | Dong, S. and Searls, D.B. 1994. Gene structure prediction by linguistic methods. Genomics 23: 540-551. | Linguistic method HMM, PD, WAM | Eukaryote |
+
 | ---- | --------- | ----------- | ------ | -------- |
 | ---- | --------- | ----------- | ------ | -------- |
 | ---- | --------- | ----------- | ------ | -------- |
