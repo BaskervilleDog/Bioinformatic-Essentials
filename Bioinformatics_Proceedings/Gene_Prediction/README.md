@@ -150,6 +150,7 @@ The homology-based approach utilizes evolutionary conservation to predict genes 
 #### Homology Based Gene Prediction Software:
 
 | Year | Tool Name | Publication | Method | Organism |
+| ---- | --------- | ----------- | ------ | -------- |
 | 1999 | CRITICA (Coding Region Identification Tool Invoking Comparative Analysis) | Badger, J. H., & Olsen, G. J. (1999). CRITICA: Coding region identification tool invoking comparative analysis. Molecular Biology and Evolution, 16(4), 512–524. https://doi.org/10.1093/oxfordjournals.molbev.a026133.<br> | Comparative| Prokaryote / Archaea |
 | 2000 | CEM | Bafna, V., & Huson, D. H. (2000). The conserved exon method for gene finding. Proceedings. International Conference on Intelligent Systems for Molecular Biology, 8, 3–12.<br>| Comparative genomics | |
 | 2000 | Rosetta | Batzoglou, S., Pachter, L., Mesirov, J. P., Berger, B., & Lander, E. S. ([s.d.]). Human and Mouse Gene Structure: Comparative Analysis and Application to Exon Prediction.<br>| Comparative genomics | |
