@@ -23,7 +23,7 @@ Gene prediction plays a important role in annotating genomic sequences, particul
         - **Functional Annotation:** Provides insights into gene function by categorizing sequences as either coding or non-coding.
         - **Comparative Genomics:** Facilitates comparisons between species by aligning coding regions to study evolutionary conservation and divergence.
 
-3. **Predicting Complete Exon-Intron Structures:**
+3. **Predicting Exon-Intron Structures:**
     
     - Predicting the exon-intron structures of protein-coding genes is important for understanding the gene’s full transcript and its protein products. This is important for:
         - **Transcriptome Analysis:** Provides a view of all transcripts expressed in a cell, tissue, or organism.
