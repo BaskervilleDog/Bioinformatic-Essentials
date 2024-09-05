@@ -72,40 +72,11 @@ Gene prediction utilizes a combination of computational algorithms and experimen
     - Combines ab initio, homology-based, and evidence-based methods to achieve more robust and accurate gene predictions.
     - **MAKER, Ensembl, NCBI’s RefSeq:** Integrated annotation pipelines that use multiple data sources and methods to produce high-quality gene predictions.
 
+---
 
 ## Bioinformatics and Predictions
 
 Use of experimentation its too expensive and take too long to characterize organisms. Therefore, using bioinformatics software's and algorithms helps speed up the process. The statistical analysis of rates of homologous recombination of different genes could determine their order on certain chromosome, helping in creating rough localization of know genes relative to each other.
-
-
-#### **Similarity-Based Approach**
-
-The similarity-based approach leverages evolutionary conservation to predict genes by comparing unknown sequences with known sequences from other organisms. This method assumes that functional regions, such as exons, are more conserved across species than non-functional regions, such as intergenic or intronic sequences. By finding similarities between sequences, this approach can infer the structure and function of unknown genomic regions.
-
-1. **Principles:**
-    
-    - **Sequence Conservation:** Functional regions (e.g., exons) tend to be conserved across species, making sequence similarity a reliable indicator of gene presence.
-    - **Homology Inference:** By aligning sequences from expressed sequence tags (ESTs), proteins, or well-annotated genomes, researchers can transfer annotations and infer the structure of genes in the target genome.
-
-2. **Alignment Methods:**
-    
-    - **Local Alignment:**
-        - **Tools:** The most commonly used tool for local alignment is the BLAST (Basic Local Alignment Search Tool) algorithm, which aligns segments of the query sequence with segments of known sequences (genes, proteins, ESTs).
-        - **Applications:** BLAST is used to identify regions of high similarity between the query and database sequences, indicating potential gene locations and functional elements.
-    
-    - **Global Alignment:**
-        - **Tools:** PROCRUSTES and GeneWise are notable tools for global alignment. These tools compare entire sequences or large segments, using homologous proteins to guide the translation of open reading frames (ORFs) within genomic sequences.
-        - **Applications:** Global alignment is particularly useful for aligning closely related sequences or for mapping protein sequences onto their corresponding genes, providing insights into exon-intron structures and splice variants.
-
-3. **Advantages:**
-    
-    - **High Accuracy:** This approach is highly accurate when homologous sequences are available, providing precise gene models based on existing annotations.
-    - **Functional Insights:** By aligning to known sequences, similarity-based methods not only predict gene structures but also provide functional annotations, such as identifying protein-coding genes and functional motifs.
-
-4. **Limitations:**
-    
-    - **Dependency on Known Data:** The effectiveness of similarity-based methods is limited by the availability and quality of homologous sequences in databases. Novel or highly divergent genes may be missed if no similar sequences are available.
-    - **Low Resolution in Non-Conserved Regions:** Non-conserved regions, such as non-coding RNAs or species-specific genes, are often overlooked due to a lack of sufficient sequence similarity.
 
 #### **Ab Initio Prediction**
 
@@ -147,6 +118,34 @@ Ab initio gene prediction is a computational approach that predicts gene structu
     - **Lower Accuracy for Complex Genomes:** Ab initio predictions can be less accurate for genomes with complex structures, such as those with extensive alternative splicing or overlapping genes.
     - **High False Positive Rates:** Without homology evidence, ab initio methods may generate predictions that do not correspond to functional genes, necessitating further validation.
 
+#### **Homology-Based Approach**
+
+The similarity-based approach leverages evolutionary conservation to predict genes by comparing unknown sequences with known sequences from other organisms. This method assumes that functional regions, such as exons, are more conserved across species than non-functional regions, such as intergenic or intronic sequences. By finding similarities between sequences, this approach can infer the structure and function of unknown genomic regions.
+
+1. **Principles:**
+    
+    - **Sequence Conservation:** Functional regions (e.g., exons) tend to be conserved across species, making sequence similarity a reliable indicator of gene presence.
+    - **Homology Inference:** By aligning sequences from expressed sequence tags (ESTs), proteins, or well-annotated genomes, researchers can transfer annotations and infer the structure of genes in the target genome.
+
+2. **Alignment Methods:**
+    
+    - **Local Alignment:**
+        - **Tools:** The most commonly used tool for local alignment is the BLAST (Basic Local Alignment Search Tool) algorithm, which aligns segments of the query sequence with segments of known sequences (genes, proteins, ESTs).
+        - **Applications:** BLAST is used to identify regions of high similarity between the query and database sequences, indicating potential gene locations and functional elements.
+    
+    - **Global Alignment:**
+        - **Tools:** PROCRUSTES and GeneWise are notable tools for global alignment. These tools compare entire sequences or large segments, using homologous proteins to guide the translation of open reading frames (ORFs) within genomic sequences.
+        - **Applications:** Global alignment is particularly useful for aligning closely related sequences or for mapping protein sequences onto their corresponding genes, providing insights into exon-intron structures and splice variants.
+
+3. **Advantages:**
+    
+    - **High Accuracy:** This approach is highly accurate when homologous sequences are available, providing precise gene models based on existing annotations.
+    - **Functional Insights:** By aligning to known sequences, similarity-based methods not only predict gene structures but also provide functional annotations, such as identifying protein-coding genes and functional motifs.
+
+4. **Limitations:**
+    
+    - **Dependency on Known Data:** The effectiveness of similarity-based methods is limited by the availability and quality of homologous sequences in databases. Novel or highly divergent genes may be missed if no similar sequences are available.
+    - **Low Resolution in Non-Conserved Regions:** Non-conserved regions, such as non-coding RNAs or species-specific genes, are often overlooked due to a lack of sufficient sequence similarity.
 
 #### **Integrated Approaches**
 
