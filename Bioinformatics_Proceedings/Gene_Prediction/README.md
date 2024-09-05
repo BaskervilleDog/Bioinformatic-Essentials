@@ -77,19 +77,9 @@ Ab initio gene prediction is a computational approach that predicts gene structu
 3. **Ab Initio Gene Prediction Software:**
 
    - **Eukaryotes:**
-     | Year | Tool Name                                  | Publication                                                                                                                              | Method                                       | Organism                        |
-|------|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|----------------------------------|
-| 1994 | GeneLang / GenLang                         | Dong, S. and Searls, D.B. 1994. Gene structure prediction by linguistic methods. Genomics 23: 540-551.                                   | Linguistic method HMM, PD, WAM               | Eukaryote                       |
-| 1995 | Fgeneh (Find gene in human) / GeneFinder   | Solovyev VV, Salamov AA, Lawrence CB (1995) Identification of human gene structure using linear discriminant functions and dynamic programming. Proceedings/International Conference on Intelligent Systems for Molecular Biology; ISMB International Conference on Intelligent Systems for Molecular Biology 3: 367–375 | HMM, DP, LDA                                | Human                           |
-| 1997 | Fgenes / GeneFinder                        | Solovyev                                                                                                                                | HMM, DP, LDA                                | Human                           |
-| 1997 | HMMGene                                    | Krogh A. Two methods for improving performance of a HMM and their application for gene finding. In: Gaasterland T, Karp P, Karplus K, Ouzounis C, Sander C, Valencia A, editors. The fifth international conference on intelligent Systems for Molecular Biology. CA: Menlo Park: AAAI Press; 1997. pp. 179–186. | CHMM                                         | Vertebrate and C. elegans       |
-| 1997 | GenScan                                    | Burge, C. (1997). Identification of genes in human genomic DNA. Ph.D. thesis, Stanford University.; Burge, C. & Karlin, S. (1997). Prediction of complete gene structures in genomic DNA. Journal of Molecular Biology, 268,78–94 | GHMM                                         |                                  |
-| 2003 | AUGUSTUS                                   | Stanke, M. & Waack, S. Gene prediction with a hidden Markov model and a new intron submodel. Bioinformatics 19 Suppl 2, ii215–ii225 (2003). | HMM                                          | Eukaryote                       |
-| 2004 | GlimmerHMM                                 | Majoros, W.H., Pertea, M., and Salzberg, S.L. TigrScan and GlimmerHMM: two open-source ab initio eukaryotic gene-finders Bioinformatics 2004 2878-2879. | GHMM                                         | Eukaryote                       |
-| 2005 | GeneMark-ES                                | Lomsadze, A. Gene identification in novel eukaryotic genomes by self-training algorithm. Nucleic Acids Res. 33, 6494–6506 (2005); Ter-Hovhannisyan, V., Lomsadze, A., Chernoff, Y. O. & Borodovsky, M. Gene prediction in novel fungal genomes using an ab initio algorithm with unsupervised training. Genome Res. 18, 1979–1990 (2008). |                                              | Eukaryote                       |
-| 2014 | GeneMark-ET                                | Lomsadze, A., Burns, P. D. & Borodovsky, M. Integration of mapped RNA-Seq reads into automatic training of eukaryotic gene finding algorithm. 42, 1–8 (2014). | HMM                                          | Eukaryote                       |
-| 2010 | Gnomon                                     | Souvorov, A. et al. Gnomon — the NCBI eukaryotic gene prediction tool. National Center for Biotechnology Information, (2010).           | HMM; Translational and splice signals are described using WMM and WAM models |                                  |
-
+     
+| Year | Tool Name | Publication | Method | Organism |
+| ---- | --------- | ----------- | ------ | -------- |
 
 
 3. **Advantages:**
