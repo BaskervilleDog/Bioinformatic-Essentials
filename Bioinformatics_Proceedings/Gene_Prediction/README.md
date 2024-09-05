@@ -52,25 +52,18 @@ Gene prediction utilizes a combination of computational algorithms and experimen
 1. **Ab Initio Prediction:**
     
     - Uses statistical models to predict genes based solely on the DNA sequence without prior knowledge of existing genes.
-    - **Hidden Markov Models (HMMs):** Commonly used for recognizing coding regions by modeling sequence features such as codon usage, GC content, and signal sequences.
-    - **GeneMark and AUGUSTUS:** Popular ab initio gene prediction tools that have been widely used in genome annotation projects.
 
 2. **Homology-Based Prediction:**
     
     - Relies on sequence similarity to known genes in other organisms to predict gene locations and structures.
-    - **BLAST, Exonerate:** Tools that align query sequences to reference genomes, identifying conserved genes and regions.
-    - **Comparative Genomics:** Involves comparing sequences from related species to transfer annotations and refine gene predictions.
 
 3. **Evidence-Based Prediction:**
     
     - Incorporates experimental data such as RNA-Seq, ESTs, or known protein sequences to guide predictions.
-    - **RNA-Seq Data Integration:** Provides direct evidence of transcription, enhancing the accuracy of exon-intron boundary predictions and revealing alternative splicing events.
-    - **EST Mapping:** Aligns expressed sequence tags to the genome, confirming the existence of predicted exons and refining gene models.
 
 4. **Integrated Approaches:**
     
     - Combines ab initio, homology-based, and evidence-based methods to achieve more robust and accurate gene predictions.
-    - **MAKER, Ensembl, NCBI’s RefSeq:** Integrated annotation pipelines that use multiple data sources and methods to produce high-quality gene predictions.
 
 ---
 
@@ -88,6 +81,7 @@ Ab initio gene prediction is a computational approach that predicts gene structu
         - **Splice Sites:** The locations where RNA splicing occurs, separating exons from introns.
         - **Branch Points and Polypyrimidine Tracts:** Key sequences involved in splicing regulation.
         - **Start and Stop Codons:** Indicators of the beginning and end of a protein-coding region.
+   
     - **Content Sensors:** These analyze the broader sequence context, such as:
         - **Codon Usage Patterns:** Specific to species, these patterns help distinguish coding regions from non-coding regions using statistical models.
         - **Nucleotide Composition:** Variations in GC content, repetitive elements, and sequence complexity that differ between coding and non-coding regions.
@@ -104,16 +98,16 @@ Ab initio gene prediction is a computational approach that predicts gene structu
 
     - **GeneParser (Snyder & Stormo, 1995):**
       Snyder, E. E., & Stormo, G. D. (1995). Identification of protein coding regions in genomic DNA. Journal of Molecular Biology, 248(1), 1–18. https://doi.org/10.1006/jmbi.1995.0198
-      
+      --
     - **GENSCAN (Burge & Karlin,. 1997):**
       Burge, C., & Karlin, S. (1997). Prediction of complete gene structures in human genomic DNA. Journal of Molecular Biology, 268(1), 78–94. https://doi.org/10.1006/jmbi.1997.0951
-      
+      --
     - **GeneMark Heuristic Approach (Besemer & Borodovsky., 1999)**
       Besemer, J., & Borodovsky, M. (1999). Heuristic approach to deriving models for gene finding. Nucleic Acids Research, 27(19), 3911–3920. https://doi.org/10.1093/nar/27.19.3911
-      
+      --
     - **GeneMarkS (Besemer et al., 2001)**
       Besemer, J., Lomsadze, A., & Borodovsky, M. (2001). GeneMarkS: A self-training method for prediction of gene starts in microbial genomes. Implications for finding sequence motifs in regulatory regions. Nucleic Acids Research, 29(12), 2607–2618. https://doi.org/10.1093/nar/29.12.2607
-      
+      --
     - **GlimmerM (Pertea & Salzberg, 2003):**
       Pertea, M., & Salzberg, S. L. (2003). Using GlimmerM to Find Genes in Eukaryotic Genomes. Current Protocols in Bioinformatics, 00(1), 4.4.1-4.4.20. https://doi.org/10.1002/0471250953.bi0404s00    
 
