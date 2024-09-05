@@ -4,9 +4,8 @@ Welcome to the Bioinformatics Essentials repository! This project aims to provid
 
 ## Table of Contents
 1. [Introduction](#introduction)
-2. [License](#license)
-3. [Contact](#contact)
-4. [Contribuiton](#contribution)
+2. [Contact](#contact)
+3. [Contribuiton](#contribution)
 
 ## **Introduction**
 Bioinformatics is an interdisciplinary field that combines biology, computer science, and data analysis to understand and interpret complex biological data. As the volume of biological data grows, so does the need for effective computational approaches to analyze and extract meaningful insights from this information.
