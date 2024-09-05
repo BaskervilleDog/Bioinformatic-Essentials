@@ -5,14 +5,14 @@ Gene prediction is a fundamental task in bioinformatics that involves identifyin
 
 ## Structure:
 
-- [Introduction](BaskervilleDog/Bioinformatic-Essentials/Bioinformatics_Proceedings/Gene_Prediction/Introduction.md)
-- [Bioinformatics and Predictions](BaskervilleDog/Bioinformatic-Essentials/Bioinformatics_Proceedings/Gene_Prediction/Bioinformatics_and_Predictions.md)
-- [Small Scale Examples](BaskervilleDog/Bioinformatic-Essentials/Bioinformatics_Proceedings/Gene_Prediction/Small_scale_examples.md)
-- [Large Scale Examples](BaskervilleDog/Bioinformatic-Essentials/Bioinformatics_Proceedings/Gene_Prediction/Large_scale_examples.md)
+- [Introduction](Introduction.md)
+- [Bioinformatics and Predictions](Bioinformatics_and_Predictions.md)
+- [Small Scale Examples](Small_scale_examples.md)
+- [Large Scale Examples](Large_scale_examples.md)
 - List of softwares:
-  - [Ab initio Prediction Softwares](BaskervilleDog/Bioinformatic-Essentials/Bioinformatics_Proceedings/Gene_Prediction/Ab_initio_prediction_softwares.md)
-  - [Homology Based Prediction Softwares](BaskervilleDog/Bioinformatic-Essentials/Bioinformatics_Proceedings/Gene_Prediction/Homology_based_prediction_softwares.md)
-  - [Integrated Prediction Softwares](BaskervilleDog/Bioinformatic-Essentials/Bioinformatics_Proceedings/Gene_Prediction/Integrated_prediction_softwares)
+  - [Ab initio Prediction Softwares](Ab_initio_prediction_softwares.md)
+  - [Homology Based Prediction Softwares](Gene_Prediction/Homology_based_prediction_softwares.md)
+  - [Integrated Prediction Softwares](Integrated_prediction_softwares.md)
     - Combined Based Gene Prediction 
     - Pipeline Based Gene Prediction 
     
