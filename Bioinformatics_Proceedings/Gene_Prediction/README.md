@@ -103,13 +103,31 @@ Ab initio gene prediction is a computational approach that predicts gene structu
 | 2003 | EasyGene | EasyGene--a prokaryotic gene finder that ranks ORFs by statistical significance. Larsen TS, Krogh A. BMC Bioinformatics. 2003 Jun 3; 4():21.<br> | Hidden Markov Model | Prokaryote / Archaea |
 | 2003 | ZCurve | Guo FB, Ou HY, Zhang CT (2003) ZCURVE: a new system for recognizing protein-coding genes in bacterial and archaeal genomes. Nucleic Acids Res 31:1780–1789<br> | Z-curve | Prokaryote / Archaea |
 | 2006 | MetaGeneAnnotator (MGA) | Noguchi H, Taniguchi T, Itoh T (2008) Meta- GeneAnnotator: detecting species-specific patterns of ribosomal binding site for precise gene prediction in anonymous prokaryotic and phage genomes. DNA Res 15:387–396.<br> | | Prokaryote |
-| 2010 | Prodigal (PROkaryotic DYnamic programming Gene-finding ALgorithm) | Hyatt, D. et al. Prodigal: prokaryotic gene recognition and translation initiation site identification. BMC Bioinformatics 11, 119 (2010) | Dynamic Programming + Hidden Markov Model. Log-likelihood coding statistics trained from data.<br> | Prokaryote, Metagenome |
+| 2010 | Prodigal (PROkaryotic DYnamic programming Gene-finding ALgorithm) | Hyatt, D. et al. Prodigal: prokaryotic gene recognition and translation initiation site identification. BMC Bioinformatics 11, 119 (2010) | Dynamic Programming + Hidden Markov Model<br> | Prokaryote, Metagenome |
 | 2007 | GISMO | Krause L, McHardy AC, Nattkemper TW, Pühler A, Stoye J, Meyer F (2007) GISMO—gene identification using a support vector machine for ORF classification. Nucleic Acids Res 35:540–549<br> | Support Vector Machine | Prokaryote |
 | 2005 | BGF (Beijing Gene Finder) | Li, H. et al. Test data sets and evaluation of gene prediction programs on the rice genome. J Comp Sci Tech 20, 446–453 (2005).<br> | Semi Hidden Markov Model | Plant (Eukaryote in general?) |
 | 2014 | ZUPLS | Song, K., Tong, T., and Wu, F. (2014). Predicting essential genes in prokaryotic genomes using a linear method: ZUPLS. Integr. Biol. 6, 460–469. doi: 10.1039/c3ib40241j<br> | Z-curve | Prokaryote |
 
 
+- **Virus:**
 
+| Year | Tool Name | Publication | Method | Organism |
+| ---- | --------- | ----------- | ------ | -------- |
+| 2003 | GeneMarkS (virus version) | Mills R, Rozanov M, Lomsadze A, Tatusova T, Borodovsky M. Improving gene annotation of complete viral genomes. Nucleic Acids Res. 2003;31(23):7041–7055. doi: 10.1093/nar/gkg878.<br>  | HMM | Virus |
+| 2006 | ZCURVE_V | ZCURVE_V: a new self-training system for recognizing protein-coding genes in viral and phage genomes.<br>  | Z curve | Virus |
+| 2019 | Vgas (Viral Genome Annotation System) | Kai-Yue Zhang, Yi-Zhou Gao, Meng-Ze Du, Shuo Liu, Chuan Dong, and Feng-Biao Guo. Vgas: A Viral Genome Annotation System. Front Microbiol. 2019; 10: 184.<br>  | ZCURVE_V + BLASTp | Virus |
+| 2007 | GLIMMER3 | Delcher AL, et al. Identifying bacterial genes and endosymbiont DNA with Glimmer, Bioinformatics, 2007, vol. 23 (pg. 673-679)<br>  | IMM | Bacteria, Archaea, and Viruses |
+
+
+- **Metagenome:**
+
+| Year | Tool Name | Publication | Method | Organism |
+| ---- | --------- | ----------- | ------ | -------- |
+| 2010 | FragGeneScan | Rho M, Tang H, Ye Y (2010) FragGeneScan: predicting genes in short and error-prone reads. Nucleic Acids Res 38:e191<br>  | HMM | Metagenome |
+| 2010 | MetaGeneMark | Zhu, W., Lomsadze, A. & Borodovsky, M. Ab initio gene identification in metagenomic sequences. Nucleic Acids Res. 38, 1–15 (2010).<br>  | HMM | Metagenome |
+| 2010 | MetaGeneMark | Zhu W, Lomsadze A, Borodovsky M (2010) Ab initio gene identification in metagenomic sequences. Nucleic Acids Res 38:e132<br>  | | Metagenome |
+| 2006 | Metagene | Noguchi, H., Park, J. & Takagi, T. MetaGene: prokaryotic gene finding from environmental genome shotgun sequences. Nucleic Acids Res. 34, 5623–5630 (2006)<br>  | | Metagenomic |
+| 2013 | MetaGUN | Liu Y, Guo J, Hu G, Zhu H (2013) Gene prediction in metagenomic fragments based on the SVM algorithm. BMC Bioinformatics 14:S12<br>  | SVM-based. Phylogenetic binning and assignment of protein sequences to each bin | Metagenome       
 
 
 3. **Advantages:**
