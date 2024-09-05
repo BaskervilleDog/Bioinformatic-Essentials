@@ -74,7 +74,7 @@ Ab initio gene prediction is a computational approach that predicts gene structu
     - **Hidden Markov Models (HMMs):** Probabilistic models that capture sequence features and their dependencies, widely used for gene prediction.
     - **Neural Networks:** Machine learning models that learn complex patterns in data, allowing for the prediction of gene structures with high accuracy.
 
-3. **Ab Initio Gene Prediction Programs:**
+3. **Ab Initio Gene Prediction Software:**
 
     - **GeneParser (Snyder & Stormo, 1995):**
       Snyder, E. E., & Stormo, G. D. (1995). Identification of protein coding regions in genomic DNA. Journal of Molecular Biology, 248(1), 1–18. https://doi.org/10.1006/jmbi.1995.0198
@@ -146,16 +146,25 @@ The homology-based approach utilizes evolutionary conservation to predict genes 
 #### Alignment Methods:
 
 1. **Local Alignment:**
-   - **Tools:** The most widely used tool for local alignment is BLAST (Basic Local Alignment Search Tool), which identifies segments of the query sequence that closely match segments of known sequences, including genes, proteins, and ESTs.
-   - **Applications:** BLAST is employed to locate regions of high similarity between the query and database sequences, which can indicate potential gene locations and functional elements.
+   - **Software:**
+   - **NCBI BLAST (Madden, 2003):**
+     Madden, T. (2003). The BLAST Sequence Analysis Tool. In The NCBI Handbook [Internet]. National Center for Biotechnology Information (US). https://www.ncbi.nlm.nih.gov/books/NBK21097/
+     --
+   - **EMBL Exonerate(Slater & Birney., 2005):** 
+     Slater, G. S. C., & Birney, E. (2005). Automated generation of heuristics for biological sequence comparison. BMC Bioinformatics, 6, 31. https://doi.org/10.1186/1471-2105-6-31
+     --
 
-2. **Global Alignment:**
-   - **Tools:** Notable tools for global alignment include PROCRUSTES and GeneWise, which compare entire sequences or large segments using homologous proteins to guide the prediction of open reading frames (ORFs) within genomic sequences.
-   - **Applications:** Global alignment is particularly effective for aligning closely related sequences or mapping protein sequences to their corresponding genes, providing insights into exon-intron structures and splice variants.
+1. **Global Alignment:**
+   - **Software:**
+   - **GeneWise (Birney & Durbin, 2000)**:
+     Birney, E., & Durbin, R. (2000). Using GeneWise in the Drosophila Annotation Experiment. Genome Research, 10(4), 547–548. https://doi.org/10.1101/gr.10.4.547
 
-3. **Profile Hidden Markov Models (HMMs):**
-   - **Tools:** HMMER is a powerful tool that uses profile HMMs to detect homology. It can model sequence families with a high degree of sensitivity, allowing for the detection of remote homologs and the characterization of sequence features that may be missed by standard alignment methods.
-   - **Applications:** HMMER is particularly useful for identifying conserved motifs, domains, and for annotating protein families across diverse genomes.
+     --
+2. **Profile Hidden Markov Models (HMMs):**
+   - **Software:**
+   - **HMMER (Finn et al., 2011)**
+     Finn, R. D., Clements, J., & Eddy, S. R. (2011). HMMER web server: Interactive sequence similarity searching. Nucleic Acids Research, 39(Web Server issue), W29–W37. https://doi.org/10.1093/nar/gkr367
+     --
 
 #### Advantages:
 
