@@ -81,6 +81,7 @@ Ab initio gene prediction is a computational approach that predicts gene structu
 | Year | Tool Name | Publication | Method | Organism |
 | ---- | --------- | ----------- | ------ | -------- |
 | 1994 | GeneLang  | Dong, S. and Searls, D.B. 1994. Gene structure prediction by linguistic methods. Genomics 23: 540-551.<br> | Linguistic method HMM, PD, WAM | Eukaryote |
+| 1995 | Fgeneh / GeneFinder | Solovyev VV, Salamov AA, Lawrence CB (1995) Identification of human gene structure using linear discriminant functions and dynamic programming. Proceedings/International Conference on Intelligent Systems for Molecular Biology; ISMB International Conference on Intelligent Systems for Molecular Biology 3: 367–375<br> | HMM, DP, LDA | Human |
 
 
 
