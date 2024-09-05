@@ -45,26 +45,6 @@ Gene prediction plays a important role in annotating genomic sequences, particul
         - **Proteomics:** Involves studying the complete set of proteins encoded by the genome, relying on accurate gene predictions to infer protein-coding sequences.
         - **Genome Studies:** Gene prediction underpins comparative genomics, evolutionary studies, and efforts to characterize genomes of new species, supporting biodiversity research and conservation efforts.
 
-### **Techniques in Gene Prediction**
-
-Gene prediction utilizes a combination of computational algorithms and experimental data to achieve accurate annotations:
-
-1. **Ab Initio Prediction:**
-    
-    - Uses statistical models to predict genes based solely on the DNA sequence without prior knowledge of existing genes.
-
-2. **Homology-Based Prediction:**
-    
-    - Relies on sequence similarity to known genes in other organisms to predict gene locations and structures.
-
-3. **Evidence-Based Prediction:**
-    
-    - Incorporates experimental data such as RNA-Seq, ESTs, or known protein sequences to guide predictions.
-
-4. **Integrated Approaches:**
-    
-    - Combines ab initio, homology-based, and evidence-based methods to achieve more robust and accurate gene predictions.
-
 ---
 
 ## Bioinformatics and Predictions
@@ -144,13 +124,15 @@ Ab initio gene prediction is a computational approach that predicts gene structu
 
 3. **Advantages:**
     
-    - **Independence from Known Sequences:** Ab initio methods can predict novel genes that have no homologs in existing databases, making them invaluable for annotating newly sequenced genomes.
+    - **Independence from Known Sequences:** Ab initio methods can predict novel genes that have no homologs in existing databases, making them important tools for annotating newly sequenced genomes.
     - **Versatility:** Applicable to a wide range of organisms, including those with few or no closely related reference genomes.
 
 4. **Limitations:**
     
     - **Lower Accuracy for Complex Genomes:** Ab initio predictions can be less accurate for genomes with complex structures, such as those with extensive alternative splicing or overlapping genes.
     - **High False Positive Rates:** Without homology evidence, ab initio methods may generate predictions that do not correspond to functional genes, necessitating further validation.
+
+---
 
 ### Homology-Based Approach
 
