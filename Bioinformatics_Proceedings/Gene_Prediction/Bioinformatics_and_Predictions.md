@@ -2,7 +2,7 @@
 
 Use of experimentation its too expensive and take too long to characterize organisms. Therefore, using bioinformatics software's and algorithms helps speed up the process. The statistical analysis of rates of homologous recombination of different genes could determine their order on certain chromosome, helping in creating rough localization of know genes relative to each other.
 
-#### **Ab Initio Prediction**
+### **Ab Initio Prediction**
 
 Ab initio gene prediction is a computational approach that predicts gene structures based solely on the DNA sequence itself, without relying on existing annotations. This method uses models of gene structure and signals to identify potential genes within genomic sequences.
 
