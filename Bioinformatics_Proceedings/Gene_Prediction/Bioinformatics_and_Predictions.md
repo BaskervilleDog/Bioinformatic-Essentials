@@ -2,6 +2,8 @@
 
 Use of experimentation its too expensive and take too long to characterize organisms. Therefore, using bioinformatics software's and algorithms helps speed up the process. The statistical analysis of rates of homologous recombination of different genes could determine their order on certain chromosome, helping in creating rough localization of know genes relative to each other.
 
+---
+
 ### **Ab Initio Prediction**
 
 Ab initio gene prediction is a computational approach that predicts gene structures based solely on the DNA sequence itself, without relying on existing annotations. This method uses models of gene structure and signals to identify potential genes within genomic sequences.
@@ -57,7 +59,7 @@ The homology-based approach utilizes evolutionary conservation to predict genes 
 
 ---
 
-#### **Integrated-Based Approaches**
+### **Integrated-Based Approaches**
 
 To overcome the limitations of each individual method, integrated approaches combine similarity-based and ab initio predictions, along with experimental data (e.g., RNA-Seq, ESTs), to enhance the accuracy and reliability of gene annotations.
 
