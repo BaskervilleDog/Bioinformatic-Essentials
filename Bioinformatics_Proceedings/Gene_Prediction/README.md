@@ -4,7 +4,7 @@
 
 Gene prediction is a fundamental aspect of bioinformatics and computational biology, involving the identification and annotation of genes within large, contiguous sequences of DNA. As a fundamental step in genome analysis, gene prediction enables researchers to locate gene products, such as RNA and proteins, and better understand the functional architecture of genomes.
 
-#### **Importance of Gene Prediction**
+### **Importance of Gene Prediction**
 
 Gene prediction plays a important role in annotating genomic sequences, particularly in large-scale genome projects. The main aspects of gene prediction is as follows:
 
@@ -45,7 +45,7 @@ Gene prediction plays a important role in annotating genomic sequences, particul
         - **Proteomics:** Involves studying the complete set of proteins encoded by the genome, relying on accurate gene predictions to infer protein-coding sequences.
         - **Genome Studies:** Gene prediction underpins comparative genomics, evolutionary studies, and efforts to characterize genomes of new species, supporting biodiversity research and conservation efforts.
 
-#### **Techniques in Gene Prediction**
+### **Techniques in Gene Prediction**
 
 Gene prediction utilizes a combination of computational algorithms and experimental data to achieve accurate annotations:
 
@@ -172,7 +172,7 @@ Gene annotation involves identifying and describing the locations and functions 
     - Download the sequence of interest in FASTA format from a database (e.g., NCBI, Ensembl) or input the sequence manually if it is a smaller sequence.
     - Example sequence (FASTA format):
         
-        `>Example_DNA ATGCGTATGACCTTGGCCAGGCTGGTGGTGCGCCTGAGGCGTGAACAGCGCCCTGAAGAGCGCTTGCTGGCGTCTGCCGAGGAGGCGGAGAGCTGGTGGCGTGGCGTGAGCCGCCGCCGTCGCCGACCCCGACCATGTCCGAGTGGCGTGTCCGCGGAGCGTGAAGTGGCGCGGCGGCGGAGCCGGTGGAGCCGCGGACGTGTAG`
+>Example_DNA ATGCGTATGACCTTGGCCAGGCTGGTGGTGCGCCTGAGGCGTGAACAGCGCCCTGAAGAGCGCTTGCTGGCGTCTGCCGAGGAGGCGGAGAGCTGGTGGCGTGGCGTGAGCCGCCGCCGTCGCCGACCCCGACCATGTCCGAGTGGCGTGTCCGCGGAGCGTGAAGTGGCGCGGCGGCGGAGCCGGTGGAGCCGCGGACGTGTAG
         
 
 #### **Step 2: Identify Potential ORFs**
@@ -189,6 +189,7 @@ Gene annotation involves identifying and describing the locations and functions 
     - Input the DNA sequence into the tool.
     - Select the genetic code (e.g., Standard, Mitochondrial) appropriate for the organism.
     - Specify the minimum ORF length (e.g., 100 base pairs) to filter out very short sequences that are unlikely to encode functional proteins.
+
 4. **Run the ORF Prediction:**
     
     - The tool will analyze the sequence in all six reading frames (three forward and three reverse).
@@ -202,13 +203,14 @@ Gene annotation involves identifying and describing the locations and functions 
         - **Start Codon Position:** Location of the start codon (e.g., ATG) within the sequence.
         - **Stop Codon Position:** Location of the stop codon (e.g., TAA, TAG, TGA) within the sequence.
         - **Length of the ORF:** The number of nucleotides or codons in the ORF, which helps assess if it could encode a functional protein.
+          
 6. **Example Output:**
     
     - For the example sequence, the ORF Finder tool might return:
         
         ORF 1: Frame: +1 Start: 1 Stop: 138 Length: 138 bp  
         ORF 2: Frame: +2 Start: 4 Stop: 120 Length: 117 bp  
-        ORF 3: Frame: -3 Start: 10 Stop: 85 Length: 75 bp`
+        ORF 3: Frame: -3 Start: 10 Stop: 85 Length: 75 bp
         
     - This output indicates potential ORFs with their positions, reading frames, and lengths.
 
@@ -218,10 +220,12 @@ Gene annotation involves identifying and describing the locations and functions 
     
     - Retain ORFs that meet the criteria for length (typically >100 codons for functional proteins).
     - Check if the ORF is in a plausible reading frame and consider biological context (e.g., proximity to promoter regions, presence of regulatory elements).
+      
 8. **BLAST Search for Homology:**
     
     - Use the predicted ORF sequence in a BLAST search (e.g., BLASTp against the protein database) to identify homologous proteins.
     - Confirm if the ORF has homology to known proteins, which provides evidence that it encodes a functional gene.
+      
 9. **Check for Functional Domains:**
     
     - Analyze the ORF using tools like **InterProScan** or **Pfam** to identify conserved protein domains or motifs, supporting functional annotation of the ORF.
@@ -232,6 +236,7 @@ Gene annotation involves identifying and describing the locations and functions 
     
     - Use annotation software or platforms like **Apollo** or **JBrowse** to add the ORF and its features to the genome map.
     - Document the gene model, including exon-intron boundaries, coding sequence (CDS), and any regulatory elements associated with the ORF.
+      
 11. **Example Annotation:**
     
     - ORF Name: Example_Gene1
@@ -244,10 +249,12 @@ Gene annotation involves identifying and describing the locations and functions 
 12. **Experimental Validation:**
     
     - If possible, validate the ORF prediction experimentally using techniques like RT-PCR, RNA-Seq, or mass spectrometry to confirm transcription and translation of the predicted gene.
+      
 13. **Refine and Update Annotations:**
     
     - Incorporate new evidence or corrections from further analysis or experimental results, ensuring that annotations remain accurate and up-to-date.
 
+---
 
 ### Finding Introns
 
@@ -268,6 +275,7 @@ Introns are non-coding regions of a gene that are transcribed into RNA but are r
     
     - Download RNA-Seq data or expressed sequence tags (ESTs) aligned to the genome. These data provide direct evidence of spliced transcripts, highlighting intron positions.
     - Use RNA-Seq data from resources like **GEO** (Gene Expression Omnibus) or aligned transcript data from databases such as **Ensembl**.
+      
 3. **Visualize Transcript Data:**
     
     - Load the genomic sequence and aligned RNA-Seq reads or ESTs into a genome browser (e.g., **IGV**, **UCSC Genome Browser**, or **Ensembl Browser**).
@@ -283,10 +291,12 @@ Introns are non-coding regions of a gene that are transcribed into RNA but are r
         - **Augustus**
         - **GeneMark**
     - These tools predict gene structures, including introns, based on statistical models of coding sequences, splice sites, and other gene features.
+      
 5. **Set Parameters for Prediction:**
     
     - Input the DNA sequence into the prediction tool.
     - Select the organism or genetic code (e.g., human, mouse) appropriate for the sequence to optimize predictions for species-specific splicing signals.
+      
 6. **Run the Gene Prediction:**
     
     - The tool will analyze the sequence and predict the full gene structure, including the positions of exons, introns, start codons, and stop codons.
@@ -303,6 +313,7 @@ Introns are non-coding regions of a gene that are transcribed into RNA but are r
         - **Donor Sites (5’ splice site):** Usually characterized by the GT sequence at the intron start.
         - **Acceptor Sites (3’ splice site):** Typically end with AG.
     - Use tools like **NetGene2** or **SplicePort** to score and validate predicted splice sites.
+      
 8. **Cross-Check with RNA-Seq or EST Data:**
     
     - Compare the predicted introns with splice junctions observed in RNA-Seq or EST alignments to confirm intron boundaries.
@@ -316,6 +327,7 @@ Introns are non-coding regions of a gene that are transcribed into RNA but are r
     - Record intron coordinates and features:
         - Intron 1: 151-300
         - Intron 2: 451-600
+          
 10. **Example Annotation:**
     
     - **Gene Name:** Example_Gene1
@@ -329,11 +341,13 @@ Introns are non-coding regions of a gene that are transcribed into RNA but are r
     
     - Validate intron predictions experimentally using techniques like RT-PCR to confirm the presence and boundaries of introns.
     - Design primers that span exon-intron boundaries to detect correctly spliced mRNA transcripts.
+      
 12. **Refine Annotations:**
     
     - Update annotations based on additional evidence or corrections from experimental validation.
     - Include notes on any alternative splicing observed, which could indicate multiple intron-exon arrangements.
 
+---
 
 ### Primer Design
 
@@ -346,7 +360,7 @@ Primer design is a crucial step in various molecular biology techniques, includi
     - Ensure the sequence is in FASTA format for easy input into primer design tools.
     - Example target sequence (FASTA format):
         
-	>Target_Sequence ATGGCGTCTGCTGCGTTGAGGCTGAGCGTTCGTGCGCCTGCTGACGACGCTCGTGTGCGTGCACGCTGCCGTGCGTGACGCTGCGTGCGTGTGCGTGCGTACGCTGCGTCGATCGTGCGTGCTCGTGCGTGTGCTGATCGTGCGTGCGTACGTGCTGCGTCGCGTGCGTGCGCGTGACGTGCGTGCGTGCGTGCTGACGTGACGCGTGCTGACGTGCTGCGTGCACGTGCGTGCGTGACGTGCGTGCGTGTGACGTGCGTGCACGTGCGTGA
+>Target_Sequence ATGGCGTCTGCTGCGTTGAGGCTGAGCGTTCGTGCGCCTGCTGACGACGCTCGTGTGCGTGCACGCTGCCGTGCGTGACGCTGCGTGCGTGTGCGTGCGTACGCTGCGTCGATCGTGCGTGCTCGTGCGTGTGCTGATCGTGCGTGCGTACGTGCTGCGTCGCGTGCGTGCGCGTGACGTGCGTGCGTGCGTGCTGACGTGACGCGTGCTGACGTGCTGCGTGCACGTGCGTGCGTGACGTGCGTGCGTGTGACGTGCGTGCACGTGCGTGA
         
 
 #### **Step 2: Choose a Primer Design Tool**
@@ -375,6 +389,7 @@ Primer design is a crucial step in various molecular biology techniques, includi
     - Review the suggested primers for key attributes:
         - **Forward Primer:** Binds to the 5’ end of the target region on the sense strand.
         - **Reverse Primer:** Binds to the 3’ end of the target region on the antisense strand.
+          
 5. **Example Primer Output from Primer3:**
     
     `Forward Primer: 5’-ATGGCGTCTGCTGCGTTGAG-3’ Reverse Primer: 5’-CACGTGCGTGCGTGACGTGC-3’ Product Size: 250 bp Tm (Forward): 60°C Tm (Reverse): 61°C GC Content (Forward): 55% GC Content (Reverse): 57%`
@@ -395,6 +410,7 @@ Primer design is a crucial step in various molecular biology techniques, includi
     - Use tools like **OligoAnalyzer** (IDT) to check for potential secondary structures in the primers:
         - **Hairpins:** Avoid loops that might interfere with primer binding.
         - **Self-Dimers and Cross-Dimers:** Ensure primers do not bind to themselves or each other, which could reduce reaction efficiency.
+          
 8. **Optimize Primer Design if Necessary:**
     
     - Adjust primers if secondary structures or non-specific binding are detected.
@@ -406,6 +422,7 @@ Primer design is a crucial step in various molecular biology techniques, includi
     
     - Synthesize the primers through a commercial provider (e.g., IDT, Thermo Fisher).
     - Use the exact sequences and confirm purity (standard desalted for PCR or HPLC-purified for qPCR).
+      
 10. **Test Primers in PCR:**
     
     - Set up a PCR reaction using the designed primers and target DNA.
@@ -424,6 +441,7 @@ Primer design is a crucial step in various molecular biology techniques, includi
     
     - Once validated, use the primers for intended applications, such as cloning, qPCR, or sequencing.
 
+---
 
 ### Finding Microsatellites (Simple Sequence Repeats - SSRs)
 
@@ -435,7 +453,7 @@ Microsatellites, also known as simple sequence repeats (SSRs), are short, repeti
     - Download the genomic sequence of interest in FASTA format from a database (e.g., NCBI, Ensembl) or input the sequence manually if you have a smaller sequence.
     - Example sequence (FASTA format):
         
-        >Example_DNA ATGCGTATGACCTTGGCCAGGCTGGTGGTGCGCCTGAGGCGTGAACAGCGCCCTGAAGAGCGCTTGCTGGCGTCTGCCGAGGAGGCGGAGAGCTGGTGGCGTGGCGTGAGCCGCCGCCGTCGCCGACCCCGACCATGTCCGAGTGGCGTGTCCGCGGAGCGTGAAGTGGCGCGGCGGCGGAGCCGGTGGAGCCGCGGACGTGTAG
+>Example_DNA ATGCGTATGACCTTGGCCAGGCTGGTGGTGCGCCTGAGGCGTGAACAGCGCCCTGAAGAGCGCTTGCTGGCGTCTGCCGAGGAGGCGGAGAGCTGGTGGCGTGGCGTGAGCCGCCGCCGTCGCCGACCCCGACCATGTCCGAGTGGCGTGTCCGCGGAGCGTGAAGTGGCGCGGCGGCGGAGCCGGTGGAGCCGCGGACGTGTAG
         
 
 #### **Step 2: Choose a Microsatellite Finder Tool**
@@ -447,6 +465,7 @@ Microsatellites, also known as simple sequence repeats (SSRs), are short, repeti
         - **WebSat:** A web-based tool for SSR discovery and primer design (WebSat).
         - **SciRoKo:** Software that identifies and categorizes SSRs.
         - **Tandem Repeats Finder (TRF):** Locates tandem repeats, including microsatellites (TRF Download).
+          
 3. **Input Sequence and Set Parameters:**
     
     - Input the DNA sequence into the selected tool.
@@ -461,11 +480,11 @@ Microsatellites, also known as simple sequence repeats (SSRs), are short, repeti
     
     - Run the search with the selected parameters.
     - The tool will scan the sequence for tandem repeats matching the criteria and generate a list of identified microsatellites.
+      
 5. **Example Output from MISA:**
     
     `Found 3 SSRs: 1. SSR 1: Motif: AT, Location: 50-65, Length: 16 bp, Repeats: 8 2. SSR 2: Motif: CG, Location: 120-138, Length: 19 bp, Repeats: 9 3. SSR 3: Motif: GATA, Location: 200-220, Length: 21 bp, Repeats: 5`
     
-
 #### **Step 4: Analyze and Validate Microsatellite Results**
 
 6. **Review the Identified Microsatellites:**
@@ -474,10 +493,12 @@ Microsatellites, also known as simple sequence repeats (SSRs), are short, repeti
         - **Motif Type:** The repetitive unit (e.g., AT, CG, GATA).
         - **Location:** Start and end positions of the SSR within the sequence.
         - **Repeat Count:** Number of times the motif is repeated.
+          
 7. **Validate Results:**
     
     - Check for potential sequencing errors or low complexity regions that might falsely appear as SSRs.
     - Use additional tools or manual inspection in a genome browser (e.g., IGV) to confirm the presence and correct annotation of microsatellites.
+      
 8. **BLAST Search for Homology (Optional):**
     
     - Perform a BLAST search with the identified SSR sequences to see if similar repeats exist in other regions or related species, which can provide insights into the conservation and potential functional significance of the SSRs.
@@ -491,6 +512,7 @@ Microsatellites, also known as simple sequence repeats (SSRs), are short, repeti
         - **Primer Length:** 18-25 nucleotides.
         - **Melting Temperature (Tm):** 55-65°C.
         - **GC Content:** 40-60%.
+          
 10. **Example Primer Output for SSR 1 (Motif AT):**
     
     
@@ -503,6 +525,7 @@ Microsatellites, also known as simple sequence repeats (SSRs), are short, repeti
     
     - Perform PCR using the designed primers on genomic DNA samples.
     - Analyze the PCR products by gel electrophoresis or capillary electrophoresis to confirm the presence and size of the SSR amplicons.
+      
 12. **Confirm Polymorphism (if applicable):**
     
     - Test SSRs across different individuals or samples to assess variability in repeat number, which is useful for genetic studies, such as linkage mapping or population genetics.
@@ -513,6 +536,7 @@ Microsatellites, also known as simple sequence repeats (SSRs), are short, repeti
     
     - Record details of each microsatellite, including sequence, location, repeat motif, primer sequences, and any polymorphic information.
     - Include data in genetic or genomic databases if applicable, or in publications if used for research studies.
+      
 14. **Apply SSRs in Research:**
     
     - Use the identified microsatellites for purposes such as:
@@ -520,6 +544,7 @@ Microsatellites, also known as simple sequence repeats (SSRs), are short, repeti
         - **Population Genetics:** Assessing genetic diversity or relatedness.
         - **Marker-Assisted Selection:** In breeding programs to track desirable traits.
 
+---
 
 ### Protein Positioning (Subcellular Localization Prediction)
 
@@ -531,8 +556,8 @@ Protein positioning, or subcellular localization prediction, involves determinin
     - Obtain the protein sequence from a database (e.g., NCBI, UniProt) or input it manually if you have the sequence data.
     - Ensure the sequence is in FASTA format for easy input into localization prediction tools.
     - Example protein sequence (FASTA format):
-        
-        >Example_Protein MTEYKLVVVGAGGVGKSALTIQLIQNHFVDEYDPTIEDSYRKQVVIDGETCLLDILDTAGQEEYSAMRDQYMRTGEGFLCVFAINNTKSFEDIHQYREQIKRVKDSDDVPMSVQASNNRQCYNVCMVLIFGHQHTGMAFGVVPSDKKTSYLVIVGFAEDAGLSFGTNVTSKIYDQYSHVVKQMDSER
+
+>Example_Protein MTEYKLVVVGAGGVGKSALTIQLIQNHFVDEYDPTIEDSYRKQVVIDGETCLLDILDTAGQEEYSAMRDQYMRTGEGFLCVFAINNTKSFEDIHQYREQIKRVKDSDDVPMSVQASNNRQCYNVCMVLIFGHQHTGMAFGVVPSDKKTSYLVIVGFAEDAGLSFGTNVTSKIYDQYSHVVKQMDSER
         
 
 #### **Step 2: Choose a Protein Localization Prediction Tool**
@@ -544,6 +569,7 @@ Protein positioning, or subcellular localization prediction, involves determinin
         - **TargetP:** Predicts the localization of proteins in eukaryotic cells, including mitochondria and chloroplasts [TargetP 2.0](https://services.healthtech.dtu.dk/services/TargetP-2.0/)
         - **CELLO:** A multi-class SVM classification system for subcellular localization prediction [CELLO Web Server](http://cello.life.nctu.edu.tw)
         - **DeepLoc:** A deep learning-based tool for subcellular localization prediction in eukaryotes [DeepLoc](https://services.healthtech.dtu.dk/services/DeepLoc-2.1/)
+          
 3. **Input the Protein Sequence and Set Parameters:**
     
     - Input the protein sequence into the chosen tool.
@@ -555,6 +581,7 @@ Protein positioning, or subcellular localization prediction, involves determinin
     
     - Run the localization prediction using the tool with the provided sequence and parameters.
     - The tool will analyze sequence features, such as signal peptides, transit peptides, and sequence motifs, to predict the likely subcellular location of the protein.
+
 5. **Example Output from TargetP:**
     
     `Predicted Localizations: 1. Mitochondrion: High likelihood (0.92) 2. Cytoplasm: Moderate likelihood (0.45) 3. Nucleus: Low likelihood (0.10)  Final Prediction: Mitochondrion`
@@ -567,10 +594,12 @@ Protein positioning, or subcellular localization prediction, involves determinin
     
     - Examine the predicted localization and associated confidence scores.
     - Consider biological context and existing literature to assess if the predicted localization aligns with known functions or experimental data.
+      
 7. **Cross-Check with Additional Tools:**
     
     - Validate the prediction by cross-checking with other tools, such as **WoLF PSORT** or **Mitoprot**, to ensure consistent results across multiple algorithms.
     - Compare the results to known localization data from databases like **UniProt** or **Human Protein Atlas**.
+      
 8. **BLAST Search for Homologous Proteins (Optional):**
     
     - Perform a BLAST search against known protein sequences to identify homologs with characterized localization.
@@ -584,6 +613,7 @@ Protein positioning, or subcellular localization prediction, involves determinin
         - **Fluorescence Microscopy:** Tag the protein with a fluorescent marker (e.g., GFP) and observe its location within the cell.
         - **Cell Fractionation and Western Blotting:** Separate cellular components (e.g., nuclear, mitochondrial) and probe for the protein of interest.
         - **Immunolocalization:** Use specific antibodies to detect the protein in fixed cells, confirming its subcellular distribution.
+
 10. **Example Experimental Validation:**
     
     - **GFP Tagging and Microscopy:** The protein tagged with GFP shows fluorescence in the mitochondria, confirming the computational prediction.
@@ -594,6 +624,7 @@ Protein positioning, or subcellular localization prediction, involves determinin
     
     - Record the predicted localization, including the prediction tool used, confidence scores, and any validation data.
     - Add the localization information to protein databases or publications if applicable.
+      
 12. **Apply Localization Data in Research:**
     
     - Use the localization information to infer potential protein functions, interactions, and pathways.
