@@ -177,9 +177,6 @@ The homology-based approach utilizes evolutionary conservation to predict genes 
 
 
 
-
-
-
 #### Advantages:
 
 - **High Accuracy:** This approach achieves high accuracy when homologous sequences are available, enabling precise gene models based on existing annotations.
@@ -190,6 +187,8 @@ The homology-based approach utilizes evolutionary conservation to predict genes 
 - **Dependency on Known Data:** The success of similarity-based methods is limited by the availability and quality of homologous sequences in databases. Novel or highly divergent genes may be overlooked if no similar sequences are present.
 - **Low Resolution in Non-Conserved Regions:** Non-conserved regions, such as species-specific genes or non-coding RNAs, are often missed due to insufficient sequence similarity.
 
+---
+
 #### **Integrated Approaches**
 
 To overcome the limitations of each individual method, integrated approaches combine similarity-based and ab initio predictions, along with experimental data (e.g., RNA-Seq, ESTs), to enhance the accuracy and reliability of gene annotations.
@@ -199,6 +198,24 @@ To overcome the limitations of each individual method, integrated approaches com
 - **Iterative Refinement:** Combining predictions from multiple methods allows for iterative refinement, reducing false positives and enhancing the resolution of gene models.
 
 Gene prediction remains a dynamic and evolving field, with ongoing improvements driven by advances in computational methods, machine learning, and the increasing availability of genomic and transcriptomic data. These methods collectively enable researchers to construct detailed and accurate maps of genomes, supporting the study of gene function, evolution, and the complex regulatory networks that underpin biological systems.
+
+#### Integrated Based Gene Prediction Software:
+
+| Year | Tool Name | Publication | Method | Organism |
+| ---- | --------- | ----------- | ------ | -------- |
+| 2003 | GeneComber | Shah, S. P., McVicker, G. P., Mackworth, A. K., Rogic, S., & Ouellette, B. F. F. (2003). GeneComber: Combining outputs of gene prediction programs for improved results. Bioinformatics (Oxford, England), 19(10), 1296–1297. https://doi.org/10.1093/bioinformatics/btg139.<br>| EUI, GI and EUI frame algorithms | |
+| 2004 | Combiner | Allen, J. E., Pertea, M., & Salzberg, S. L. (2004). Computational Gene Prediction Using Multiple Sources of Evidence. Genome Research, 14(1), 142–148. https://doi.org/10.1101/gr.1562804.<br>| Linear Combiner with voting function | |
+| 2004 | Reganor | McHardy, A. C., Goesmann, A., Pühler, A., & Meyer, F. (2004). Development of joint application strategies for two microbial gene finders. Bioinformatics, 20(10), 1622–1631. https://doi.org/10.1093/bioinformatics/bth137.<br>| Combiner: abinitio + evidence           | Prokaryote / Archaea |
+| 2005 | JIGSAW | Allen, J. E., & Salzberg, S. L. (2005). JIGSAW: Integration of multiple sources of evidence for gene prediction. Bioinformatics, 21(18), 3596–3603. https://doi.org/10.1093/bioinformatics/bti609.<br>| GHMM-like algorithm | |
+| 2007 | GLEAN | Elsik, C. G., Mackey, A. J., Reese, J. T., Milshina, N. V., Roos, D. S., & Weinstock, G. M. (2007). Creating a honey bee consensus gene set. Genome Biology, 8(1), R13. https://doi.org/10.1186/gb-2007-8-1-r13.<br>| HMM | Eukaryote |
+| 2007 | Genomix | Coghlan, A., & Durbin, R. (2007). Genomix: A method for combining gene-finders’ predictions, which uses evolutionary conservation of sequence and intron-exon structure. Bioinformatics (Oxford, England), 23(12), 1468–1475. https://doi.org/10.1093/bioinformatics/btm133.<br> | DP | Eukaryote |
+| 2008 | SCGPred | Li, X., Ren, Q., Weng, Y., Cai, H., Zhu, Y., & Zhang, Y. (2008). SCGPred: A score-based method for gene structure prediction by combining multiple sources of evidence. Genomics, Proteomics & Bioinformatics, 6(3–4), 175–185. https://doi.org/10.1016/S1672-0229(09)60005-X.<br> | | Eukaryote |
+| 2008 | Evidence Modeler (EVM) | Haas, B. J., Salzberg, S. L., Zhu, W., Pertea, M., Allen, J. E., Orvis, J., White, O., Buell, C. R., & Wortman, J. R. (2008). Automated eukaryotic gene structure annotation using EVidenceModeler and the Program to Assemble Spliced Alignments. Genome Biology, 9(1), R7. https://doi.org/10.1186/gb-2008-9-1-r7.<br> | | |
+| 2008 | Evigan | Liu, Q., Mackey, A. J., Roos, D. S., & Pereira, F. C. N. (2008). Evigan: A hidden variable model for integrating gene evidence for eukaryotic gene prediction. Bioinformatics (Oxford, England), 24(5), 597–605. https://doi.org/10.1093/bioinformatics/btn004.<br>| Dynamic Bayes networks (DBNs) | Eukaryote |
+| 2008 | Maker | Cantarel, B. L., Korf, I., Robb, S. M. C., Parra, G., Ross, E., Moore, B., Holt, C., Sánchez Alvarado, A., & Yandell, M. (2008). MAKER: An easy-to-use annotation pipeline designed for emerging model organism genomes. Genome Research, 18(1), 188–196. https://doi.org/10.1101/gr.6743907.<br> | | |
+| 2012 | eCRAIG (ensemble CRAIG) | Bernal, A., Crammer, K., & Pereira, F. (2012). Automated gene-model curation using global discriminative learning. Bioinformatics (Oxford, England), 28(12), 1571–1578. https://doi.org/10.1093/bioinformatics/bts176.<br>| CRF-based | |
+| 2015 | Ipred | Zickmann, F., & Renard, B. Y. (2015). IPred—Integrating ab initio and evidence based gene predictions to improve prediction accuracy. BMC Genomics, 16(1), 134. https://doi.org/10.1186/s12864-015-1315-9.<br> | Evidence-based combiner | |
+
 
 ---
 
