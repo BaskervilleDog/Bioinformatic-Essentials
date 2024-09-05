@@ -87,8 +87,8 @@ Ab initio gene prediction is a computational approach that predicts gene structu
 | 2003 | AUGUSTUS | Stanke, M., & Waack, S. (2003). Gene prediction with a hidden Markov model and a new intron submodel. Bioinformatics (Oxford, England), 19 Suppl 2, ii215-225. https://doi.org/10.1093/bioinformatics/btg1080<br> | Hidden Markov Model | Eukaryote |
 | 2004 | GlimmerHMM | Majoros, W. H., Pertea, M., & Salzberg, S. L. (2004). TigrScan and GlimmerHMM: Two open source ab initio eukaryotic gene-finders. Bioinformatics (Oxford, England), 20(16), 2878–2879. https://doi.org/10.1093/bioinformatics/bth315<br> | Generalized Hidden Markov Model | Eukaryote |
 | 2005 | GeneMark-ES | Lomsadze, A., Ter-Hovhannisyan, V., Chernoff, Y. O., & Borodovsky, M. (2005). Gene identification in novel eukaryotic genomes by self-training algorithm. Nucleic Acids Research, 33(20), 6494–6506. https://doi.org/10.1093/nar/gki937.<br> | | Eukaryote |
+| 2010 | Gnomon | Souvorov, A., Kapustin, Y., Kiryutin, B., Chetvernin, V., Tatusova, T., & Lipman, D. (2010). Gnomon – NCBI eukaryotic gene prediction tool. Available in: <https://www.ncbi.nlm.nih.gov/core/assets/genome/files/Gnomon-description.pdf> <br>| Hidden Markov Model, Weight Array Matrix| |
 | 2014 | GeneMark-ET | Lomsadze, A., Burns, P. D., & Borodovsky, M. (2014). Integration of mapped RNA-Seq reads into automatic training of eukaryotic gene finding algorithm. Nucleic Acids Research, 42(15), e119. https://doi.org/10.1093/nar/gku557.<br> | Hidden Markov Model | Eukaryote |
-| 2010 | Gnomon | Souvorov, A., Kapustin, Y., Kiryutin, B., Chetvernin, V., Tatusova, T., & Lipman, D. (2010). Gnomon – NCBI eukaryotic gene prediction tool. Available in <https://www.ncbi.nlm.nih.gov/core/assets/genome/files/Gnomon-description.pdf/> <br>| Hidden Markov Model, Weight Array Matrix| |
 
 - **Prokaryotes:**
 
