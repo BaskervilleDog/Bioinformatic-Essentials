@@ -90,7 +90,6 @@ Ab initio gene prediction is a computational approach that predicts gene structu
 | 2005 | BGF (Beijing Gene Finder) | Li, H., Liu, J.-S., Xu, Z., Jin, J., Fang, L., Gao, L., Li, Y.-D., Xing, Z.-X., Gao, S.-G., Liu, T., Li, H.-H., Li, Y., Fang, L.-J., Xie, H.-M., Zheng, W.-M., & Hao, B.-L. (2005). Test Data Sets and Evaluation of Gene Prediction Programs on the Rice Genome. Journal of Computer Science and Technology, 20(4), 446–453. https://doi.org/10.1007/s11390-005-0446-x.<br> | Semi Hidden Markov Model | Eukaryote |
 | 2010 | Gnomon | Souvorov, A., Kapustin, Y., Kiryutin, B., Chetvernin, V., Tatusova, T., & Lipman, D. (2010). Gnomon – NCBI eukaryotic gene prediction tool. Available in: <https://www.ncbi.nlm.nih.gov/core/assets/genome/files/Gnomon-description.pdf> <br>| Hidden Markov Model, Weight Array Matrix| |
 | 2014 | GeneMark-ET | Lomsadze, A., Burns, P. D., & Borodovsky, M. (2014). Integration of mapped RNA-Seq reads into automatic training of eukaryotic gene finding algorithm. Nucleic Acids Research, 42(15), e119. https://doi.org/10.1093/nar/gku557.<br> | Hidden Markov Model | Eukaryote |
---
 
 - **Prokaryotes:**
 
@@ -106,7 +105,6 @@ Ab initio gene prediction is a computational approach that predicts gene structu
 | 2007 | GISMO | Krause, L., McHardy, A. C., Nattkemper, T. W., Pühler, A., Stoye, J., & Meyer, F. (2007). GISMO--gene identification using a support vector machine for ORF classification. Nucleic Acids Research, 35(2), 540–549. https://doi.org/10.1093/nar/gkl1083.<br> | Support Vector Machine | Prokaryote |
 | 2010 | Prodigal (PROkaryotic DYnamic programming Gene-finding ALgorithm) | Hyatt, D., Chen, G.-L., LoCascio, P. F., Land, M. L., Larimer, F. W., & Hauser, L. J. (2010). Prodigal: Prokaryotic gene recognition and translation initiation site identification. BMC Bioinformatics, 11(1), 119. https://doi.org/10.1186/1471-2105-11-119. <br>| Dynamic Programming + Hidden Markov Model | Prokaryote |
 | 2014 | ZUPLS | Song, K., Tong, T., & Wu, F. (2014). Predicting essential genes in prokaryotic genomes using a linear method: ZUPLS. Integrative Biology: Quantitative Biosciences from Nano to Macro, 6(4), 460–469. https://doi.org/10.1039/c3ib40241j.<br> | Z-curve | Prokaryote |
---
 
 - **Virus:**
 
@@ -149,28 +147,37 @@ The homology-based approach utilizes evolutionary conservation to predict genes 
 1. **Sequence Conservation:** Functional regions (e.g., exons) are typically conserved across species, making sequence similarity a robust indicator of gene presence and structure.
 2. **Homology Inference:** By aligning sequences from expressed sequence tags (ESTs), proteins, or well-annotated genomes, researchers can extrapolate gene structures in the target genome, effectively transferring annotations from model organisms.
 
-#### Alignment Methods:
+#### Homology Based Gene Prediction Software:
 
-1. **Local Alignment:**
-   - **Software:**
-   - **NCBI BLAST (Madden, 2003):**
-     Madden, T. (2003). The BLAST Sequence Analysis Tool. In The NCBI Handbook [Internet]. National Center for Biotechnology Information (US). https://www.ncbi.nlm.nih.gov/books/NBK21097/
-     --
-   - **EMBL Exonerate(Slater & Birney., 2005):** 
-     Slater, G. S. C., & Birney, E. (2005). Automated generation of heuristics for biological sequence comparison. BMC Bioinformatics, 6, 31. https://doi.org/10.1186/1471-2105-6-31
-     --
+| Year | Tool Name | Publication | Method | Organism |
+| 1999 | CRITICA (Coding Region Identification Tool Invoking Comparative Analysis) | Badger, J. H., & Olsen, G. J. (1999). CRITICA: Coding region identification tool invoking comparative analysis. Molecular Biology and Evolution, 16(4), 512–524. https://doi.org/10.1093/oxfordjournals.molbev.a026133.<br> | Comparative| Prokaryote / Archaea |
+| 2000 | CEM | Bafna, V., & Huson, D. H. (2000). The conserved exon method for gene finding. Proceedings. International Conference on Intelligent Systems for Molecular Biology, 8, 3–12.<br>| Comparative genomics | |
+| 2000 | Rosetta | Batzoglou, S., Pachter, L., Mesirov, J. P., Berger, B., & Lander, E. S. ([s.d.]). Human and Mouse Gene Structure: Comparative Analysis and Application to Exon Prediction.<br>| Comparative genomics | |
+| 2001 | SGP-1 (Syntenic Gene Prediction) | Wiehe, T., Gebauer-Jung, S., Mitchell-Olds, T., & Guigó, R. (2001). SGP-1: Prediction and validation of homologous genes based on sequence alignments. Genome Research, 11(9), 1574–1583. https://doi.org/10.1101/gr.177401.<br> | Comparative | Vertebrates and plants |
+| 2001 | GenomeScan | Yeh, R. F., Lim, L. P., & Burge, C. B. (2001). Computational inference of homologous gene structures in the human genome. Genome Research, 11(5), 803–816. https://doi.org/10.1101/gr.175701.<br>| Comparative | |
+| 2001 | Twinscan | Korf, I., Flicek, P., Duan, D., & Brent, M. R. (2001). Integrating genomic homology into gene structure prediction. Bioinformatics, 17(suppl_1), S140–S148. https://doi.org/10.1093/bioinformatics/17.suppl_1.S140.<br>| Comparative-genomics-based | |
+| 2002 | AGenDA (Alignment-based Gene-Detection Algorithm) | Rinner, O., & Morgenstern, B. (2002). AGenDA: Gene prediction by comparative sequence analysis. In Silico Biology, 2(3), 195–205.<br>| Comparative | Eukaryote |
+| 2002 | DOUBLESCAN | Meyer, I. M., & Durbin, R. (2002). Comparative ab initio prediction of gene structures using pair HMMs. Bioinformatics (Oxford, England), 18(10), 1309–1318. https://doi.org/10.1093/bioinformatics/18.10.1309.<br> | Comparative | |
+| 2002 | GAZE | Howe, K. L., Chothia, T., & Durbin, R. (2002). GAZE: A generic framework for the integration of gene-prediction data by dynamic programming. Genome Research, 12(9), 1418–1427. https://doi.org/10.1101/gr.149502.<br>| Comparative / combiner | |
+| 2003 | SGP2 | Parra, G., Agarwal, P., Abril, J. F., Wiehe, T., Fickett, J. W., & Guigó, R. (2003). Comparative Gene Prediction in Human and Mouse. Genome Research, 13(1), 108–117. https://doi.org/10.1101/gr.871403.<br>| Comparative | Eukaryote |
+| 2003 | SLAM | Alexandersson, M., Cawley, S., & Pachter, L. (2003). SLAM: Cross-species gene finding and alignment with a generalized pair hidden Markov model. Genome Research, 13(3), 496–502. https://doi.org/10.1101/gr.424203.<br> | Comparative | Eukaryote |
+| 2003 | ETOPE | Nekrutenko, A., Chung, W.-Y., & Li, W.-H. (2003). ETOPE: Evolutionary test of predicted exons. Nucleic Acids Research, 31(13), 3564–3567. https://doi.org/10.1093/nar/gkg597.<br>| Comparative / evolutionary | Eukaryote |
+| 2003 | EvoGene | Pedersen, J. S., & Hein, J. (2003). Gene finding with a hidden Markov model of genome structure and evolution. Bioinformatics (Oxford, England), 19(2), 219–227. https://doi.org/10.1093/bioinformatics/19.2.219.<br>| Comparative / evolutionary | |
+| 2004 | Projector | Meyer, I. M., & Durbin, R. (2004). Gene structure conservation aids similarity based gene prediction. Nucleic Acids Research, 32(2), 776–783. https://doi.org/10.1093/nar/gkh211.<br>| Comparative | |
+| 2005 | TWAIN | Majoros, W. H., Pertea, M., & Salzberg, S. L. (2005). Efficient implementation of a generalized pair hidden Markov model for comparative gene finding. Bioinformatics (Oxford, England), 21(9), 1782–1788. https://doi.org/10.1093/bioinformatics/bti297.<br> | Comparative | |
+| 2006 | DOGFISH (for ‘detection of genomic features in sequence homologies’) | Carter, D., & Durbin, R. (2006). Vertebrate gene finding from multiple-species alignments using a two-level strategy. Genome Biology, 7(Suppl 1), S6. https://doi.org/10.1186/gb-2006-7-s1-s6.<br>| Comparative | Vertebrate |
+| 2006 | N_Scan_EST | Wei, C., & Brent, M. R. (2006). Using ESTs to improve the accuracy of de novo gene prediction. BMC Bioinformatics, 7, 327. https://doi.org/10.1186/1471-2105-7-327.<br>| Comparative + Evidence | |
+| 2006 | TWINSCAN_EST | Wei, C., & Brent, M. R. (2006). Using ESTs to improve the accuracy of de novo gene prediction. BMC Bioinformatics, 7, 327. https://doi.org/10.1186/1471-2105-7-327.<br> | Comparative + Evidence | |
+| 2007 | Contrast | Gross, S. S., Do, C. B., Sirota, M., & Batzoglou, S. (2007). CONTRAST: A discriminative, phylogeny-free approach to multiple informant de novo gene prediction. Genome Biology, 8(12), R269. https://doi.org/10.1186/gb-2007-8-12-r269.<br>| Comparative | |
+| 2007 | Conrad | DeCaprio, D., Vinson, J. P., Pearson, M. D., Montgomery, P., Doherty, M., & Galagan, J. E. (2007). Conrad: Gene prediction using conditional random fields. Genome Research, 17(9), 1389–1398. https://doi.org/10.1101/gr.6558107.<br>| Comparative | |
+| 2015 | GASS ( Genome Annotation based on Species Similarity) | Wang, Y., Chen, L., Song, N., & Lei, X. (2015). GASS: Genome structural annotation for Eukaryotes based on species similarity. BMC Genomics, 16(1), 150. https://doi.org/10.1186/s12864-015-1353-3.<br>| Comparative | |
+| 2016 | AugustusCGP | König, S., Romoth, L. W., Gerischer, L., & Stanke, M. (2016). Simultaneous gene finding in multiple genomes. Bioinformatics (Oxford, England), 32(22), 3388–3395. https://doi.org/10.1093/bioinformatics/btw494.<br>| Comparative | Eukaryote |
+| 2016 | CESAR | Sharma, V., & Hiller, M. (2019). Coding Exon-Structure Aware Realigner (CESAR): Utilizing Genome Alignments for Comparative Gene Annotation. Methods in Molecular Biology (Clifton, N.J.), 1962, 179–191. https://doi.org/10.1007/978-1-4939-9173-0_10.<br>| Comparative | |
 
-1. **Global Alignment:**
-   - **Software:**
-   - **GeneWise (Birney & Durbin, 2000)**:
-     Birney, E., & Durbin, R. (2000). Using GeneWise in the Drosophila Annotation Experiment. Genome Research, 10(4), 547–548. https://doi.org/10.1101/gr.10.4.547
-     --
-     
-2. **Profile Hidden Markov Models (HMMs):**
-   - **Software:**
-   - **HMMER (Finn et al., 2011)**
-     Finn, R. D., Clements, J., & Eddy, S. R. (2011). HMMER web server: Interactive sequence similarity searching. Nucleic Acids Research, 39(Web Server issue), W29–W37. https://doi.org/10.1093/nar/gkr367
-     --
+
+
+
+
 
 #### Advantages:
 
