@@ -76,51 +76,21 @@ Ab initio gene prediction is a computational approach that predicts gene structu
 
 3. **Ab Initio Gene Prediction Software:**
 
-    - **GeneParser (Snyder & Stormo, 1995):**
-      Snyder, E. E., & Stormo, G. D. (1995). Identification of protein coding regions in genomic DNA. Journal of Molecular Biology, 248(1), 1–18. https://doi.org/10.1006/jmbi.1995.0198
-      --
-    - **GENSCAN (Burge & Karlin,. 1997):**
-      Burge, C., & Karlin, S. (1997). Prediction of complete gene structures in human genomic DNA. Journal of Molecular Biology, 268(1), 78–94. https://doi.org/10.1006/jmbi.1997.0951
-      --
-    - **GeneMark Heuristic Approach (Besemer & Borodovsky., 1999)**
-      Besemer, J., & Borodovsky, M. (1999). Heuristic approach to deriving models for gene finding. Nucleic Acids Research, 27(19), 3911–3920. https://doi.org/10.1093/nar/27.19.3911
-      --
-    - **GeneMarkS (Besemer et al., 2001)**
-      Besemer, J., Lomsadze, A., & Borodovsky, M. (2001). GeneMarkS: A self-training method for prediction of gene starts in microbial genomes. Implications for finding sequence motifs in regulatory regions. Nucleic Acids Research, 29(12), 2607–2618. https://doi.org/10.1093/nar/29.12.2607
-      --
-    - **GlimmerM (Pertea & Salzberg, 2003):**
-      Pertea, M., & Salzberg, S. L. (2003). Using GlimmerM to Find Genes in Eukaryotic Genomes. Current Protocols in Bioinformatics, 00(1), 4.4.1-4.4.20. https://doi.org/10.1002/0471250953.bi0404s00
-      --
-    - **FGENESH (Solovyev et al., 2006):**
-      Solovyev, V., Kosarev, P., Seledsov, I., & Vorobyev, D. (2006). Automatic annotation of eukaryotic genes, pseudogenes and promoters. Genome Biology, 7(1), S10. https://doi.org/10.1186/gb-2006-7-s1-s10
-      --
-    - **MetaGene (Noguchi et al., 2006)**
-      Noguchi, H., Park, J., & Takagi, T. (2006). MetaGene: Prokaryotic gene finding from environmental genome shotgun sequences. Nucleic Acids Research, 34(19), 5623–5630. https://doi.org/10.1093/nar/gkl723
-      --
-    - **GeneID (Blanco et al., 2007):**
-      Blanco, E., Parra, G., & Guigó, R. (2007). Using geneid to Identify Genes. Current Protocols in Bioinformatics, 18(1), 4.3.1-4.3.28. https://doi.org/10.1002/0471250953.bi0403s18
-      --
-    - **GLIMMER 3 (Delcher et al., 2007)**
-      Delcher, A. L., Bratke, K. A., Powers, E. C., & Salzberg, S. L. (2007). Identifying bacterial genes and endosymbiont DNA with Glimmer. Bioinformatics, 23(6), 673–679. https://doi.org/10.1093/bioinformatics/btm009
-      --
-    - **Meta Gene Annotator (2008)**
-      Noguchi, H., Taniguchi, T., & Itoh, T. (2008). MetaGeneAnnotator: Detecting Species-Specific Patterns of Ribosomal Binding Site for Precise Gene Prediction in Anonymous Prokaryotic and Phage Genomes. DNA Research, 15(6), 387–396. https://doi.org/10.1093/dnares/dsn027
-      --
-    - **FragGeneScan (Rho et al., 2010)**
-      Rho, M., Tang, H., & Ye, Y. (2010). FragGeneScan: Predicting genes in short and error-prone reads. Nucleic Acids Research, 38(20), e191. https://doi.org/10.1093/nar/gkq747
-      --
-    - **MetaGeneMark (2010)**
-      Zhu, W., Lomsadze, A., & Borodovsky, M. (2010). Ab initio gene identification in metagenomic sequences. Nucleic Acids Research, 38(12), e132. https://doi.org/10.1093/nar/gkq275
-      --
-    - **Prodigal (Hyatt et al., 2010)**
-      Hyatt, D., Chen, G.-L., LoCascio, P. F., Land, M. L., Larimer, F. W., & Hauser, L. J. (2010). Prodigal: Prokaryotic gene recognition and translation initiation site identification. BMC Bioinformatics, 11(1), 119. https://doi.org/10.1186/1471-2105-11-119
-      --
-    - **TransDecoder (Haas, 2013)**
-      Haas, BJ. https://github.com/TransDecoder/TransDecoder
-      --
-    - **GeneMarkS 2 (Lomsadze et al., 2018)**
-      Lomsadze, A., Gemayel, K., Tang, S., & Borodovsky, M. (2018). Modeling leaderless transcription and atypical genes results in more accurate gene prediction in prokaryotes. Genome Research, 28(7), 1079–1089. https://doi.org/10.1101/gr.230615.117
-      --
+   - **Eukaryotes:**
+     | Year | Tool Name                                  | Publication                                                                                                                              | Method                                       | Organism                        |
+|------|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|----------------------------------|
+| 1994 | GeneLang / GenLang                         | Dong, S. and Searls, D.B. 1994. Gene structure prediction by linguistic methods. Genomics 23: 540-551.                                   | Linguistic method HMM, PD, WAM               | Eukaryote                       |
+| 1995 | Fgeneh (Find gene in human) / GeneFinder   | Solovyev VV, Salamov AA, Lawrence CB (1995) Identification of human gene structure using linear discriminant functions and dynamic programming. Proceedings/International Conference on Intelligent Systems for Molecular Biology; ISMB International Conference on Intelligent Systems for Molecular Biology 3: 367–375 | HMM, DP, LDA                                | Human                           |
+| 1997 | Fgenes / GeneFinder                        | Solovyev                                                                                                                                | HMM, DP, LDA                                | Human                           |
+| 1997 | HMMGene                                    | Krogh A. Two methods for improving performance of a HMM and their application for gene finding. In: Gaasterland T, Karp P, Karplus K, Ouzounis C, Sander C, Valencia A, editors. The fifth international conference on intelligent Systems for Molecular Biology. CA: Menlo Park: AAAI Press; 1997. pp. 179–186. | CHMM                                         | Vertebrate and C. elegans       |
+| 1997 | GenScan                                    | Burge, C. (1997). Identification of genes in human genomic DNA. Ph.D. thesis, Stanford University.; Burge, C. & Karlin, S. (1997). Prediction of complete gene structures in genomic DNA. Journal of Molecular Biology, 268,78–94 | GHMM                                         |                                  |
+| 2003 | AUGUSTUS                                   | Stanke, M. & Waack, S. Gene prediction with a hidden Markov model and a new intron submodel. Bioinformatics 19 Suppl 2, ii215–ii225 (2003). | HMM                                          | Eukaryote                       |
+| 2004 | GlimmerHMM                                 | Majoros, W.H., Pertea, M., and Salzberg, S.L. TigrScan and GlimmerHMM: two open-source ab initio eukaryotic gene-finders Bioinformatics 2004 2878-2879. | GHMM                                         | Eukaryote                       |
+| 2005 | GeneMark-ES                                | Lomsadze, A. Gene identification in novel eukaryotic genomes by self-training algorithm. Nucleic Acids Res. 33, 6494–6506 (2005); Ter-Hovhannisyan, V., Lomsadze, A., Chernoff, Y. O. & Borodovsky, M. Gene prediction in novel fungal genomes using an ab initio algorithm with unsupervised training. Genome Res. 18, 1979–1990 (2008). |                                              | Eukaryote                       |
+| 2014 | GeneMark-ET                                | Lomsadze, A., Burns, P. D. & Borodovsky, M. Integration of mapped RNA-Seq reads into automatic training of eukaryotic gene finding algorithm. 42, 1–8 (2014). | HMM                                          | Eukaryote                       |
+| 2010 | Gnomon                                     | Souvorov, A. et al. Gnomon — the NCBI eukaryotic gene prediction tool. National Center for Biotechnology Information, (2010).           | HMM; Translational and splice signals are described using WMM and WAM models |                                  |
+
+
 
 3. **Advantages:**
     
