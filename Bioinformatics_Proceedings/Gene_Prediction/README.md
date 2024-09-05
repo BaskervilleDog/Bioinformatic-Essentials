@@ -103,11 +103,9 @@ Ab initio gene prediction is a computational approach that predicts gene structu
 3. **Ab Initio Gene Prediction Programs:**
 
     - **GeneParser (Snyder & Stormo, 1995):**
-    - Focuses on parsing genomic sequences to identify coding regions and exon-intron boundaries.
       Snyder, E. E., & Stormo, G. D. (1995). Identification of protein coding regions in genomic DNA. Journal of Molecular Biology, 248(1), 1–18. https://doi.org/10.1006/jmbi.1995.0198
       
     - **GENSCAN (Burge & Karlin,. 1997):**
-    - One of the earliest and most popular ab initio gene prediction tools, using a comprehensive model that includes signal and content sensors.
       Burge, C., & Karlin, S. (1997). Prediction of complete gene structures in human genomic DNA. Journal of Molecular Biology, 268(1), 78–94. https://doi.org/10.1006/jmbi.1997.0951
       
     - **GeneMark Heuristic Approach (Besemer & Borodovsky., 1999)**
@@ -117,18 +115,15 @@ Ab initio gene prediction is a computational approach that predicts gene structu
       Besemer, J., Lomsadze, A., & Borodovsky, M. (2001). GeneMarkS: A self-training method for prediction of gene starts in microbial genomes. Implications for finding sequence motifs in regulatory regions. Nucleic Acids Research, 29(12), 2607–2618. https://doi.org/10.1093/nar/29.12.2607
       
     - **GlimmerM (Pertea & Salzberg, 2003):**
-    - Designed for microbial genomes, this tool uses a combination of HMMs and other statistical approaches.
       Pertea, M., & Salzberg, S. L. (2003). Using GlimmerM to Find Genes in Eukaryotic Genomes. Current Protocols in Bioinformatics, 00(1), 4.4.1-4.4.20. https://doi.org/10.1002/0471250953.bi0404s00    
 
     - **FGENESH (Solovyev et al., 2006):**
-    - A widely used tool for eukaryotic gene prediction, integrating multiple models to achieve high accuracy.
       Solovyev, V., Kosarev, P., Seledsov, I., & Vorobyev, D. (2006). Automatic annotation of eukaryotic genes, pseudogenes and promoters. Genome Biology, 7(1), S10. https://doi.org/10.1186/gb-2006-7-s1-s10
 
-- **MetaGene (Noguchi et al., 2006)**
+    - **MetaGene (Noguchi et al., 2006)**
       Noguchi, H., Park, J., & Takagi, T. (2006). MetaGene: Prokaryotic gene finding from environmental genome shotgun sequences. Nucleic Acids Research, 34(19), 5623–5630. https://doi.org/10.1093/nar/gkl723
 
     - **GeneID (Blanco et al., 2007):**
-    - Predicts genes based on statistical models of gene structure and content.
       Blanco, E., Parra, G., & Guigó, R. (2007). Using geneid to Identify Genes. Current Protocols in Bioinformatics, 18(1), 4.3.1-4.3.28. https://doi.org/10.1002/0471250953.bi0403s18
       
     - **GLIMMER 3 (Delcher et al., 2007)**
