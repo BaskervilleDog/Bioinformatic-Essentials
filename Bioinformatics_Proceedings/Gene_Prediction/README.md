@@ -158,8 +158,8 @@ The homology-based approach utilizes evolutionary conservation to predict genes 
    - **Software:**
    - **GeneWise (Birney & Durbin, 2000)**:
      Birney, E., & Durbin, R. (2000). Using GeneWise in the Drosophila Annotation Experiment. Genome Research, 10(4), 547–548. https://doi.org/10.1101/gr.10.4.547
-
      --
+     
 2. **Profile Hidden Markov Models (HMMs):**
    - **Software:**
    - **HMMER (Finn et al., 2011)**
