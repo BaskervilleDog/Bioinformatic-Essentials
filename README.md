@@ -38,7 +38,7 @@ Anyone interested in learning how to analyze biological data using computational
 ### **Getting Started**
 To get started, explore the topics of interest.
 
-### Topics
+## **Topics**
 1. Setting up tools and environment for Bioinformatics
 2. NCBI Tools and Resources
 3. Assemblies
