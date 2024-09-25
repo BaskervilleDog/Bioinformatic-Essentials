@@ -36,7 +36,15 @@ Educators in need of teaching resources for bioinformatics courses.
 Anyone interested in learning how to analyze biological data using computational tools.
 
 ### **Getting Started**
-To get started, explore the Bioinformatics Proceedings, organized by topic in the directories.
+To get started, explore the topics of interest.
+
+### Topics
+1. Setting up tools and environment for Bioinformatics
+2. NCBI Tools and Resources
+3. Assemblies
+4. Gene Annotation (https://github.com/BaskervilleDog/Gene-Annotation)
+5. Phylogenetic Analysis
+6. SNP Genotyping
 
 ## **Contact**
 For any questions or issues, please contact [Gianlucca Urzêda] at [gianlucca.urzeda@gmail.com].
